@@ -26,6 +26,23 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer components {
+  .marquee-text {
+    font-size: 186.772px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(235, 110, 255, 0.54) 5%,
+      rgba(235, 110, 255, 0.3) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #000000;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
