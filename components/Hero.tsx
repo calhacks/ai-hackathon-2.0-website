@@ -26,7 +26,7 @@ const Hero = () => {
               placeholder="john@gmail.com"
               required
             />
-            <button className="whitespace-nowrap bg-white px-4 py-2 text-lg text-background">
+            <button className="whitespace-nowrap bg-white px-4 py-2 text-lg text-background transition-all duration-300 ease-in-out hover:bg-cyan-100">
               Notify Me
             </button>
           </div>
