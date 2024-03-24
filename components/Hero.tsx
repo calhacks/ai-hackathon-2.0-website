@@ -14,7 +14,6 @@ const Hero = () => {
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
 
   const handleSubmit = async (e: SyntheticEvent) => {
-    // Handle form submission
     e.preventDefault();
     setIsLoading(true);
 
@@ -49,7 +48,7 @@ const Hero = () => {
       <div className="md:items-between relative z-10 mx-auto flex min-h-[100vh] max-w-screen-xl flex-col items-center px-8 pb-12 pt-36 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-24 md:py-36">
         <div className="relative flex flex-col items-center text-center md:items-start md:text-left">
           <div className="max-w-md">
-            <h1 className="font-pp-neue-bit flex flex-col text-5xl font-bold text-white sm:text-7xl md:text-8xl">
+            <h1 className="flex flex-col font-pp-neue-bit text-5xl font-bold text-white sm:text-7xl md:text-8xl">
               <span>UC Berkeley</span>
               <span title="AI Hackathon" className="-mt-2 sm:-mt-5">
                 AI Hackathon
@@ -61,7 +60,7 @@ const Hero = () => {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  className="animate-wiggle pointer-events-none"
+                  className="pointer-events-none animate-wiggle"
                   src="/images/star.svg"
                   alt="Star"
                   width={50}
@@ -70,14 +69,14 @@ const Hero = () => {
               </motion.span>
             </h1>
           </div>
-          <p className="font-whyte-inktrap inline-block w-full text-xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_1.5px_rgb(152_249_255)] sm:text-2xl sm:[text-shadow:_0px_0px_3px_rgb(152_249_255)] md:text-3xl">
+          <p className="inline-block w-full font-whyte-inktrap text-xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_1.5px_rgb(152_249_255)] sm:text-2xl sm:[text-shadow:_0px_0px_3px_rgb(152_249_255)] md:text-3xl">
             June 22-23, 2024
           </p>
           <Logos className="mx-auto mt-8 block flex flex-row md:hidden" />
         </div>
         <form
           onSubmit={handleSubmit}
-          className="font-whyte-inktrap mt-32 w-full w-full max-w-md text-white md:ml-auto md:mt-0"
+          className="mt-32 w-full w-full max-w-md font-whyte-inktrap text-white md:ml-auto md:mt-0"
         >
           <p className="text-center text-center text-lg text-white sm:whitespace-nowrap md:text-right md:text-right md:text-xl">
             Be the first to know when applications launch.
@@ -89,13 +88,13 @@ const Hero = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="focus:ring-none block w-full rounded-none border border-2 border-[#72DDE7] bg-transparent p-2.5 font-open-sans text-sm font-medium text-gray-900 text-white placeholder-white shadow-lg shadow-[#1072789e] drop-shadow-input focus:border-[#72DDE7] focus:ring-transparent"
+              className="focus:ring-none block w-full rounded-none border border-2 border-[#72DDE7] bg-transparent p-2.5 font-open-sans text-sm font-medium text-gray-900 text-white placeholder-gray-200 shadow-lg shadow-[#1072789e] drop-shadow-input focus:border-[#72DDE7] focus:ring-transparent"
               placeholder="john@gmail.com"
               required
             />
             <button
               disabled={isLoading}
-              className="font-whyte-inktrap text-md flex cursor-pointer items-center items-center space-x-2 whitespace-nowrap bg-white px-2 py-1 text-background transition-all duration-300 ease-in-out hover:bg-[#BAE8ED] disabled:cursor-not-allowed sm:px-4 sm:py-1.5 sm:text-lg"
+              className="text-md flex cursor-pointer items-center items-center space-x-2 whitespace-nowrap bg-white px-2 py-1 font-whyte-inktrap text-background transition-all duration-300 ease-in-out hover:bg-[#BAE8ED] disabled:cursor-not-allowed sm:px-4 sm:py-1.5 sm:text-lg"
             >
               {isLoading && (
                 <IconsList.spinner className="h-4 w-4 animate-spin sm:h-5 sm:w-5" />
@@ -127,7 +126,7 @@ const Hero = () => {
       <div className="-mt-52 flex flex-col sm:-mt-64 md:hidden">
         <SlidingText />
       </div>
-      <div className="margin-auto fixed bottom-[-30vh] left-1/2 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>
+      <div className="z-1 margin-auto fixed bottom-[-30vh] left-1/2 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>
     </div>
   );
 };
