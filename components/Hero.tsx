@@ -39,7 +39,7 @@ const Hero = () => {
           </p>
           <Logos className="mx-auto mt-8 block flex flex-row md:hidden" />
         </div>
-        <form className="ml-auto mt-32 w-full text-7xl text-white md:mt-0 md:w-1/2">
+        <form className="font-whyte-inktrap ml-auto mt-32 w-full text-7xl text-white md:mt-0 md:w-1/2">
           <p className="whitespace-nowrap text-center text-xl text-white md:text-right">
             Be the first to know when applications launch.
           </p>
@@ -48,7 +48,7 @@ const Hero = () => {
               type="email"
               name="email"
               id="email"
-              className="focus:ring-none block w-full rounded-none border border-2 border-[#72DDE7] bg-transparent p-2.5 text-sm font-medium text-gray-900 text-white placeholder-white shadow-lg shadow-[#1072789e] drop-shadow-input focus:border-[#72DDE7] focus:ring-transparent"
+              className="focus:ring-none block w-full rounded-none border border-2 border-[#72DDE7] bg-transparent p-2.5 font-open-sans text-sm font-medium text-gray-900 text-white placeholder-white shadow-lg shadow-[#1072789e] drop-shadow-input focus:border-[#72DDE7] focus:ring-transparent"
               placeholder="john@gmail.com"
               required
             />

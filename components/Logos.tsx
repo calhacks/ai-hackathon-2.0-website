@@ -11,18 +11,6 @@ const Logos: FC<LogosProps> = ({ className }) => {
     <div
       className={cn("pointer-events-none flex flex-row space-x-8", className)}
     >
-      {/* <Image
-        src="/images/hab-logo.svg"
-        alt="Hackathons @ Berkeley Logo"
-        width={100}
-        height={50}
-      />
-      <Image
-        src="/images/berkeley-skydeck-logo.svg"
-        alt="Hackathons @ Berkeley Logo"
-        width={100}
-        height={50}
-      /> */}
       <a
         href="https://hackberkeley.org"
         rel="noopener noreferrer"
