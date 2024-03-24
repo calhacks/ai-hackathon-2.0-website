@@ -11,7 +11,7 @@ const Logos: FC<LogosProps> = ({ className }) => {
     <div
       className={cn("pointer-events-none flex flex-row space-x-8", className)}
     >
-      <Image
+      {/* <Image
         src="/images/hab-logo.svg"
         alt="Hackathons @ Berkeley Logo"
         width={100}
@@ -22,7 +22,33 @@ const Logos: FC<LogosProps> = ({ className }) => {
         alt="Hackathons @ Berkeley Logo"
         width={100}
         height={50}
-      />
+      /> */}
+      <a
+        href="https://hackberkeley.org"
+        rel="noopener noreferrer"
+        target="_blank"
+        className="pointer-events-auto m-0 -mt-1.5 p-0"
+      >
+        <Image
+          src="/images/hab-logo.svg"
+          alt="Hackathons @ Berkeley Logo"
+          width={100}
+          height={50}
+        />
+      </a>
+      <a
+        href="https://skydeck.berkeley.edu/"
+        rel="noopener noreferrer"
+        target="_blank"
+        className="pointer-events-auto m-0 p-0"
+      >
+        <Image
+          src="/images/berkeley-skydeck-logo.svg"
+          alt="Hackathons @ Berkeley Logo"
+          width={100}
+          height={50}
+        />
+      </a>
     </div>
   );
 };
