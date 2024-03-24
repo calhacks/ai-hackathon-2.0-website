@@ -28,7 +28,7 @@ body {
 
 @layer components {
   .marquee-text {
-    font-size: 200px;
+    font-size: 180px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;

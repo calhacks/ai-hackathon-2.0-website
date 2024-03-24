@@ -15,9 +15,9 @@ const Hero = () => {
       <div className="relative z-10 mx-auto flex min-h-[100vh] max-w-screen-xl flex-col px-16 pb-12 pt-36 md:place-content-between md:justify-between md:px-24 md:py-36">
         <div className="relative flex flex-col items-center text-center md:items-start md:text-left">
           <div className="max-w-md">
-            <h1 className="font-pp-neue-bit inline-flex flex-col text-7xl font-bold leading-[3.5rem] text-white md:text-8xl">
+            <h1 className="font-pp-neue-bit flex flex-col text-7xl font-bold text-white md:text-8xl">
               <span>UC Berkeley</span>
-              <span title="AI Hackathon" className="glitch-text">
+              <span title="AI Hackathon" className="glitch-text -mt-5">
                 AI Hackathon
               </span>
               <motion.span
@@ -36,7 +36,7 @@ const Hero = () => {
               </motion.span>
             </h1>
           </div>
-          <p className="font-whyte-inktrap mt-4 inline-block text-2xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_3px_rgb(152_249_255)] md:mt-6 md:text-3xl">
+          <p className="font-whyte-inktrap inline-block text-2xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_3px_rgb(152_249_255)] md:text-3xl">
             June 22-23, 2024
           </p>
           <Logos className="mx-auto mt-8 block flex flex-row md:hidden" />
