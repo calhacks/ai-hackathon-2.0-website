@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -21,7 +24,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative z-10 mx-auto flex min-h-[100vh] max-w-screen-xl flex-col place-content-between justify-between px-24 py-36">
-        <div className="flex flex-col justify-between">
+        <div className="relative flex flex-col justify-between">
           <h1 className="font-pp-neue-bit text-8xl font-bold leading-[3.5rem] text-white">
             <span className="block">UC Berkeley</span>
             <span className="block">AI Hackathon</span>
@@ -29,6 +32,20 @@ const Hero = () => {
           <p className="font-whyte-inktrap	mt-6 inline-block text-3xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_3px_rgb(152_249_255)]">
             June 22-23, 2024
           </p>
+          <motion.div
+            className="absolute -left-8 -top-12"
+            initial={{ opacity: 0, scale: 0.3, transform: "rotate(45deg)" }}
+            animate={{ opacity: 1, scale: 1, transform: "rotate(0deg)" }}
+            transition={{ duration: 0.3 }}
+          >
+            <Image
+              className="animate-wiggle pointer-events-none"
+              src="/images/star.svg"
+              alt="Star"
+              width={50}
+              height={50}
+            />
+          </motion.div>
         </div>
         <form className="ml-auto w-full text-7xl text-white md:w-1/2">
           <p className="whitespace-nowrap text-right text-xl text-white">
@@ -43,7 +60,7 @@ const Hero = () => {
               placeholder="john@gmail.com"
               required
             />
-            <button className="cursor-pointer whitespace-nowrap bg-white px-4 py-2 text-lg text-background transition-all duration-300 ease-in-out hover:bg-cyan-100">
+            <button className="font-whyte-inktrap cursor-pointer whitespace-nowrap bg-white px-4 pt-2 text-lg text-background transition-all duration-300 ease-in-out hover:bg-[#BAE8ED]">
               Notify Me
             </button>
           </div>
@@ -51,7 +68,10 @@ const Hero = () => {
             <span className="text-gray-100">Questions? Email</span>
             <a
               href="mailto:team@calhacks.io"
-              className="ml-1 bg-gradient-to-r from-electric-blue to-heliotrope bg-clip-text text-transparent hover:border-b hover:border-electric-blue"
+              className={`
+              ml-1 bg-gradient-to-r from-electric-blue to-heliotrope bg-clip-text text-transparent after:absolute after:block
+              after:h-[3px] after:w-[145px] after:origin-left after:scale-x-0 after:bg-heliotrope after:transition after:duration-300 after:content-[''] after:hover:scale-x-100
+              `}
             >
               team@calhacks.io
             </a>

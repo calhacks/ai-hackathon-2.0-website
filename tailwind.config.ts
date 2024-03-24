@@ -14,7 +14,6 @@ const config: Config = {
         "electric-blue": "#82F8FF",
         heliotrope: "#DA47FF",
         violet: "#690C81",
-        // gray: "#515151",
       },
       fontFamily: {
         "open-sans": ["var(--font-open-sans)", "sans-serif"],
@@ -37,6 +36,21 @@ const config: Config = {
       },
       dropShadow: {
         input: "0 0 13px rgba(16, 114, 120, 0.62)",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": {
+            transform: "rotate(-3deg)",
+            filter: "drop-shadow(0 0 10px #6B017C)",
+          },
+          "50%": {
+            transform: "rotate(3deg)",
+            filter: "none",
+          },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1.5s ease-in-out infinite",
       },
     },
   },
