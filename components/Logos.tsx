@@ -31,7 +31,7 @@ const Logos: FC<LogosProps> = ({ className }) => {
         className="pointer-events-auto m-0 p-0"
       >
         <Image
-          src="/images/berkeley-skydeck-logo.svg"
+          src="/images/berkeley-skydeck-logo.png"
           alt="Hackathons @ Berkeley Logo"
           width={100}
           height={50}
