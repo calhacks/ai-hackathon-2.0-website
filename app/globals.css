@@ -34,7 +34,7 @@ body {
     line-height: normal;
     background: -webkit-linear-gradient(
       0deg,
-      rgba(235, 110, 255, 0.54) 5%,
+      rgba(235, 110, 255, 0.3) 5%,
       rgba(235, 110, 255, 0.3) 100%
     );
     -webkit-background-clip: text;

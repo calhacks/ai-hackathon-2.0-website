@@ -8,12 +8,12 @@ interface LogosProps {
 
 const Logos: FC<LogosProps> = ({ className }) => {
   return (
-    <div className={cn("z-50 flex flex-row space-x-8", className)}>
+    <div className={cn("flex flex-row space-x-8", className)}>
       <a
         href="https://hackberkeley.org"
         rel="noopener noreferrer"
         target="_blank"
-        className="m-0 -mt-1.5 p-0"
+        className="z-50 m-0 -mt-1.5 p-0"
       >
         <Image
           src="/images/hab-logo.svg"
@@ -26,7 +26,7 @@ const Logos: FC<LogosProps> = ({ className }) => {
         href="https://skydeck.berkeley.edu/"
         rel="noopener noreferrer"
         target="_blank"
-        className="m-0 p-0"
+        className="z-50 m-0 p-0"
       >
         <Image
           src="/images/berkeley-skydeck-logo.png"

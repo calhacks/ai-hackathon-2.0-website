@@ -8,22 +8,22 @@ const SlidingText = () => {
       <div className="w-screen">
         <Marquee
           loop={0}
-          speed={200}
+          speed={100}
           direction="left"
           className="m-0 h-full p-0"
         >
-          <span className="marquee-text z-0 select-none font-open-sans opacity-60">
+          <span className="marquee-text z-0 select-none font-open-sans opacity-40">
             HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
             DESIGN. CREATE.
           </span>
         </Marquee>
         <Marquee
           loop={0}
-          speed={200}
+          speed={100}
           direction="right"
           className="-mt-14 h-full p-0"
         >
-          <span className="marquee-text z-0 select-none font-open-sans opacity-60">
+          <span className="marquee-text z-0 select-none font-open-sans opacity-40">
             HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
             DESIGN. CREATE.
           </span>
