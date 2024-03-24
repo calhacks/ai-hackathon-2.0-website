@@ -12,12 +12,12 @@ const Hero = () => {
       <div className="absolute right-[120px] top-[80px] hidden text-6xl text-white md:block">
         <Logos />
       </div>
-      <div className="relative z-10 mx-auto flex min-h-[100vh] max-w-screen-xl flex-col px-16 pb-12 pt-36 md:place-content-between md:justify-between md:px-24 md:py-36">
+      <div className="relative z-10 mx-auto flex min-h-[100vh] max-w-screen-xl flex-col px-8 pb-12 pt-36 sm:px-16 md:place-content-between md:justify-between md:px-24 md:py-36">
         <div className="relative flex flex-col items-center text-center md:items-start md:text-left">
           <div className="max-w-md">
-            <h1 className="font-pp-neue-bit flex flex-col text-7xl font-bold text-white md:text-8xl">
+            <h1 className="font-pp-neue-bit flex flex-col text-5xl font-bold text-white sm:text-7xl md:text-8xl">
               <span>UC Berkeley</span>
-              <span title="AI Hackathon" className="glitch-text -mt-5">
+              <span title="AI Hackathon" className="glitch-text -mt-2 sm:-mt-5">
                 AI Hackathon
               </span>
               <motion.span
@@ -36,13 +36,13 @@ const Hero = () => {
               </motion.span>
             </h1>
           </div>
-          <p className="font-whyte-inktrap inline-block text-2xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_3px_rgb(152_249_255)] md:text-3xl">
+          <p className="font-whyte-inktrap inline-block text-xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_3px_rgb(152_249_255)] sm:text-2xl md:text-3xl">
             June 22-23, 2024
           </p>
           <Logos className="mx-auto mt-8 block flex flex-row md:hidden" />
         </div>
-        <form className="font-whyte-inktrap ml-auto mt-32 w-full text-7xl text-white md:mt-0 md:w-1/2">
-          <p className="whitespace-nowrap text-center text-lg text-white md:text-right md:text-xl">
+        <form className="font-whyte-inktrap ml-auto mt-32 w-full max-w-[19rem] text-white sm:max-w-sm md:mt-0 md:w-1/2">
+          <p className="text-center text-lg text-white sm:whitespace-nowrap md:text-right md:text-xl">
             Be the first to know when applications launch.
           </p>
           <div className="mt-4 flex flex-row space-x-4">
@@ -54,7 +54,7 @@ const Hero = () => {
               placeholder="john@gmail.com"
               required
             />
-            <button className="font-whyte-inktrap cursor-pointer whitespace-nowrap bg-white px-4 pt-2 text-lg text-background transition-all duration-300 ease-in-out hover:bg-[#BAE8ED]">
+            <button className="font-whyte-inktrap text-md cursor-pointer whitespace-nowrap bg-white px-2 pt-1 text-background transition-all duration-300 ease-in-out hover:bg-[#BAE8ED] sm:px-4 sm:pt-2 sm:text-lg">
               Notify Me
             </button>
           </div>
@@ -73,7 +73,7 @@ const Hero = () => {
           </div>
         </form>
       </div>
-      <div className="-mt-64 flex flex-col md:hidden">
+      <div className="-mt-52 flex flex-col sm:-mt-64 md:hidden">
         <SlidingText />
       </div>
       <div className="margin-auto fixed bottom-[-30vh] left-1/2 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>

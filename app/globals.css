@@ -43,6 +43,13 @@ body {
     color: #000000;
   }
 
+  /* https://tailwindcss.com/docs/screens */
+  @media screen and (max-width: 640px) {
+    .marquee-text {
+      font-size: 100px;
+    }
+  }
+
   .glitch-text {
     animation: glitch 1s linear infinite;
   }
