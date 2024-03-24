@@ -1,33 +1,12 @@
 import Hero from "@/components/Hero";
-import Marquee from "react-fast-marquee";
+import SlidingText from "@/components/SlidingText";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-background">
       <Hero />
-      <div className="absolute top-[14rem] flex flex-col">
-        <Marquee
-          loop={0}
-          speed={200}
-          direction="left"
-          className="m-0 h-full p-0"
-        >
-          <span className="marquee-text z-0 select-none font-open-sans">
-            HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
-            DESIGN. CREATE.
-          </span>
-        </Marquee>
-        <Marquee
-          loop={0}
-          speed={200}
-          direction="right"
-          className="-mt-8 h-full p-0"
-        >
-          <span className="marquee-text z-0 select-none font-open-sans">
-            HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
-            DESIGN. CREATE.
-          </span>
-        </Marquee>
+      <div className="absolute top-[14rem] flex hidden flex-col md:block">
+        <SlidingText />
       </div>
     </main>
   );

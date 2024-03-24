@@ -28,7 +28,7 @@ body {
 
 @layer components {
   .marquee-text {
-    font-size: 186.772px;
+    font-size: 200px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -38,6 +38,7 @@ body {
       rgba(235, 110, 255, 0.3) 100%
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-stroke: 4px transparent;
     color: #000000;
   }
