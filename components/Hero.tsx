@@ -17,7 +17,9 @@ const Hero = () => {
           <div className="max-w-md">
             <h1 className="font-pp-neue-bit inline-flex flex-col text-8xl font-bold leading-[3.5rem] text-white">
               <span>UC Berkeley</span>
-              <span>AI Hackathon</span>
+              <span title="AI Hackathon" className="glitch-text">
+                AI Hackathon
+              </span>
               <motion.span
                 className="absolute -top-12 left-0 md:-left-8"
                 initial={{ opacity: 0, scale: 0.3, transform: "rotate(45deg)" }}
