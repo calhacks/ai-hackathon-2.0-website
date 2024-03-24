@@ -1,12 +1,46 @@
 "use client";
 
-import React from "react";
+import React, { SyntheticEvent, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Logos from "./Logos";
 import SlidingText from "./SlidingText";
+import { IconsList } from "@/app/IconsList";
+import { CircleCheck } from "lucide-react";
 
 const Hero = () => {
+  const [email, setEmail] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
+
+  const handleSubmit = async (e: SyntheticEvent) => {
+    // Handle form submission
+    e.preventDefault();
+    setIsLoading(true);
+
+    const API_BASE_URL = "https://api.calhacks.io";
+    const response = await fetch(`${API_BASE_URL}/static/subscribe`, {
+      mode: "cors",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        list: "ch",
+      }),
+    });
+
+    setEmail("");
+    if (response.status === 204) {
+      setIsSuccess(true);
+    } else {
+      setIsSuccess(false);
+    }
+
+    setIsLoading(false);
+  };
+
   return (
     <div className="relative w-full overflow-hidden">
       <div className="absolute right-[120px] top-[80px] hidden text-6xl text-white md:block">
@@ -41,7 +75,10 @@ const Hero = () => {
           </p>
           <Logos className="mx-auto mt-8 block flex flex-row md:hidden" />
         </div>
-        <form className="font-whyte-inktrap mt-32 w-full w-full max-w-md text-white md:ml-auto md:mt-0">
+        <form
+          onSubmit={handleSubmit}
+          className="font-whyte-inktrap mt-32 w-full w-full max-w-md text-white md:ml-auto md:mt-0"
+        >
           <p className="text-center text-center text-lg text-white sm:whitespace-nowrap md:text-right md:text-right md:text-xl">
             Be the first to know when applications launch.
           </p>
@@ -50,14 +87,28 @@ const Hero = () => {
               type="email"
               name="email"
               id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="focus:ring-none block w-full rounded-none border border-2 border-[#72DDE7] bg-transparent p-2.5 font-open-sans text-sm font-medium text-gray-900 text-white placeholder-white shadow-lg shadow-[#1072789e] drop-shadow-input focus:border-[#72DDE7] focus:ring-transparent"
               placeholder="john@gmail.com"
               required
             />
-            <button className="font-whyte-inktrap text-md cursor-pointer whitespace-nowrap bg-white px-2 pt-1 text-background transition-all duration-300 ease-in-out hover:bg-[#BAE8ED] sm:px-4 sm:pt-2 sm:text-lg">
-              Notify Me
+            <button
+              disabled={isLoading}
+              className="font-whyte-inktrap text-md flex cursor-pointer items-center items-center space-x-2 whitespace-nowrap bg-white px-2 py-1 text-background transition-all duration-300 ease-in-out hover:bg-[#BAE8ED] disabled:cursor-not-allowed sm:px-4 sm:py-1.5 sm:text-lg"
+            >
+              {isLoading && (
+                <IconsList.spinner className="h-4 w-4 animate-spin sm:h-5 sm:w-5" />
+              )}
+              <span className="mt-1.5 sm:mt-2">Notify Me</span>
             </button>
           </div>
+          {isSuccess && (
+            <div className="flex h-full flex-row items-center space-x-1 text-sm text-electric-blue">
+              <CircleCheck className="h-3 w-3" />
+              <span className="mt-1">Successfully subscribed</span>
+            </div>
+          )}
           <div className="mt-2 flex justify-center text-base font-normal text-gray-200 md:justify-end md:text-lg">
             <span className="text-gray-100">Questions? Email</span>
             <a
