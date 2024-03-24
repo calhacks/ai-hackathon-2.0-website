@@ -13,6 +13,7 @@ const config: Config = {
         "electric-blue": "#82F8FF",
         heliotrope: "#DA47FF",
         violet: "#690C81",
+        // gray: "#515151",
       },
       fontFamily: {
         "open-sans": ["var(--font-open-sans)", "sans-serif"],
@@ -26,8 +27,14 @@ const config: Config = {
         "marquee-gradient":
           "linear-gradient(0deg, rgba(235, 110, 255, 0.54) 5%, rgba(235, 110, 255, 0.30) 100%)",
       },
+      dropShadow: {
+        input: "0 0 13px rgba(16, 114, 120, 0.62)",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+    // ...
+  ],
 };
 export default config;

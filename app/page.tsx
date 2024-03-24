@@ -12,7 +12,7 @@ export default function Home() {
           direction="left"
           className="m-0 h-full p-0"
         >
-          <span className="marquee-text font-open-sans z-0 select-none">
+          <span className="marquee-text z-0 select-none font-open-sans">
             HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
             DESIGN. CREATE.
           </span>
@@ -21,9 +21,9 @@ export default function Home() {
           loop={0}
           speed={200}
           direction="right"
-          className="m-0 h-full p-0"
+          className="-mt-8 h-full p-0"
         >
-          <span className="marquee-text font-open-sans z-0 select-none">
+          <span className="marquee-text z-0 select-none font-open-sans">
             HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
             DESIGN. CREATE.
           </span>
