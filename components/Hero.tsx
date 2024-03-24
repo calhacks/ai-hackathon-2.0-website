@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="max-w-md">
             <h1 className="font-pp-neue-bit flex flex-col text-5xl font-bold text-white sm:text-7xl md:text-8xl">
               <span>UC Berkeley</span>
-              <span title="AI Hackathon" className="glitch-text -mt-2 sm:-mt-5">
+              <span title="AI Hackathon" className="-mt-2 sm:-mt-5">
                 AI Hackathon
               </span>
               <motion.span
@@ -36,7 +36,7 @@ const Hero = () => {
               </motion.span>
             </h1>
           </div>
-          <p className="font-whyte-inktrap inline-block w-full text-xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_3px_rgb(152_249_255)] sm:text-2xl md:text-3xl">
+          <p className="font-whyte-inktrap inline-block w-full text-xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_1.5px_rgb(152_249_255)] sm:text-2xl sm:[text-shadow:_0px_0px_3px_rgb(152_249_255)] md:text-3xl">
             June 22-23, 2024
           </p>
           <Logos className="mx-auto mt-8 block flex flex-row md:hidden" />

@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import { siteConfig } from "@/lib/config";
 
 const ppNeueBit = localFont({
   src: "./PPNeueBit-Bold.otf",
@@ -21,9 +22,48 @@ const openSans = Open_Sans({
   variable: "--font-open-sans",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#000911",
+};
+
 export const metadata: Metadata = {
-  title: "UC Berkeley AI Hackathon",
-  description: "UC Berkeley AI Hackathon x Berkeley Skydeck - June 22-23, 2024",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: "UC Berkeley AI Hackathon - Coming June 22-23, 2024",
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  creator: "hackathonsatberkeley",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/favicon.ico",
+  },
+  manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
 export default function RootLayout({
