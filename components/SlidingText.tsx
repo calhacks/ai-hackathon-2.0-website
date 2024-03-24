@@ -12,7 +12,7 @@ const SlidingText = () => {
           direction="left"
           className="m-0 h-full p-0"
         >
-          <span className="marquee-text z-0 select-none font-open-sans opacity-50">
+          <span className="marquee-text z-0 select-none font-open-sans opacity-60">
             HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
             DESIGN. CREATE.
           </span>
@@ -23,7 +23,7 @@ const SlidingText = () => {
           direction="right"
           className="-mt-14 h-full p-0"
         >
-          <span className="marquee-text z-0 select-none font-open-sans opacity-50">
+          <span className="marquee-text z-0 select-none font-open-sans opacity-60">
             HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
             DESIGN. CREATE.
           </span>
