@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Inter, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const ppNeueBit = localFont({
+  src: "./PPNeueBit-Bold.otf",
+  display: "swap",
+  variable: "--font-pp-neue-bit",
+});
+
+const whyteInktrap = localFont({
+  src: "./WhyteInktrap-Regular.ttf",
+  display: "swap",
+  variable: "--font-whyte-inktrap",
+});
 
 const openSans = Open_Sans({
   weight: ["400", "700"],
@@ -23,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${openSans.className} font-open-sans`}
+        className={`${openSans.variable} ${whyteInktrap.variable} ${ppNeueBit.variable}`}
       >
         {children}
       </body>

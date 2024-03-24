@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
   content: [
@@ -18,6 +19,8 @@ const config: Config = {
       fontFamily: {
         "open-sans": ["var(--font-open-sans)", "sans-serif"],
         inter: ["var(--font-inter)", "sans-serif"],
+        "whyte-inktrap": ["var(--font-whyte-inktrap)", "sans-serif"],
+        "pp-neue-bit": ["var(--font-pp-neue-bit)", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial":
@@ -27,6 +30,11 @@ const config: Config = {
         "marquee-gradient":
           "linear-gradient(0deg, rgba(235, 110, 255, 0.54) 5%, rgba(235, 110, 255, 0.30) 100%)",
       },
+      textShadow: {
+        sm: "0 1px 2px var(--tw-shadow-color)",
+        DEFAULT: "0 2px 4px var(--tw-shadow-color)",
+        lg: "0 8px 16px var(--tw-shadow-color)",
+      },
       dropShadow: {
         input: "0 0 13px rgba(16, 114, 120, 0.62)",
       },
@@ -34,7 +42,18 @@ const config: Config = {
   },
   plugins: [
     require("@tailwindcss/forms"),
-    // ...
+    // @ts-ignore
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value: string) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") },
+      );
+    }),
+    //...
   ],
 };
 export default config;
