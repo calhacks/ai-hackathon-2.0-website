@@ -5,14 +5,14 @@ const SlidingText = () => {
   return (
     <>
       {/* Fix issue with spawning more elements: https://github.com/justin-chu/react-fast-marquee/issues/66#issuecomment-1575052529 */}
-      <div className="w-screen">
+      <div className="z-2 relative w-screen">
         <Marquee
           loop={0}
           speed={100}
           direction="left"
           className="m-0 h-full p-0"
         >
-          <span className="marquee-text z-0 select-none font-open-sans opacity-40">
+          <span className="marquee-text z-0 select-none fill-transparent font-open-sans opacity-40">
             HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
             DESIGN. CREATE.
           </span>
@@ -23,7 +23,7 @@ const SlidingText = () => {
           direction="right"
           className="-mt-14 h-full p-0"
         >
-          <span className="marquee-text z-0 select-none font-open-sans opacity-40">
+          <span className="marquee-text z-0 select-none fill-transparent font-open-sans opacity-40">
             HACK. DESIGN. CREATE. LAUGH. BUILD. INNOVATE. LEARN. IMAGINE. HACK.
             DESIGN. CREATE.
           </span>

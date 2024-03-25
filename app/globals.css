@@ -40,7 +40,6 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-stroke: 4px transparent;
-    color: #000000;
   }
 
   /* https://tailwindcss.com/docs/screens */

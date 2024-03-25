@@ -19,7 +19,6 @@ const Hero = () => {
 
     const API_BASE_URL = "https://api.calhacks.io";
     const response = await fetch(`${API_BASE_URL}/static/subscribe`, {
-      mode: "cors",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,14 +44,28 @@ const Hero = () => {
       <div className="absolute right-[120px] top-[80px] hidden text-6xl text-white md:block">
         <Logos />
       </div>
-      <div className="md:items-between relative z-10 mx-auto flex min-h-[100vh] max-w-screen-xl flex-col items-center px-8 pb-12 pt-36 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-24 md:py-36">
+      <div className="md:items-between relative z-10 mx-auto flex min-h-[100vh] max-w-screen-xl flex-col items-center px-8 pb-12 pt-36 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-20 md:py-40">
         <div className="relative flex flex-col items-center text-center md:items-start md:text-left">
           <div className="max-w-md">
             <h1 className="flex flex-col font-pp-neue-bit text-5xl font-bold text-white sm:text-7xl md:text-8xl">
               <span>UC Berkeley</span>
-              <span title="AI Hackathon" className="-mt-2 sm:-mt-5">
+              {/* <span title="AI Hackathon" className="-mt-2 sm:-mt-5">
                 AI Hackathon
-              </span>
+              </span> */}
+              <div className="relative h-[40px] sm:h-[50px] md:h-[70px]">
+                <Image
+                  src="/images/ai-hackathon-text.svg"
+                  alt="AI Hackathon"
+                  fill={true}
+                  className="pointer-events-none -mt-4 hidden md:block"
+                />
+                <Image
+                  src="/images/ai-hackathon-text.svg"
+                  alt="AI Hackathon"
+                  fill={true}
+                  className="pointer-events-none -mt-3 block md:hidden"
+                />
+              </div>
               <motion.span
                 className="absolute -top-12 left-0 md:-left-8"
                 initial={{ opacity: 0, scale: 0.3, transform: "rotate(45deg)" }}
@@ -69,7 +82,7 @@ const Hero = () => {
               </motion.span>
             </h1>
           </div>
-          <p className="inline-block w-full font-whyte-inktrap text-xl font-semibold tracking-wider text-electric-blue [text-shadow:_0px_0px_1.5px_rgb(152_249_255)] sm:text-2xl sm:[text-shadow:_0px_0px_3px_rgb(152_249_255)] md:text-3xl">
+          <p className="inline-block w-full font-whyte-inktrap text-xl font-normal tracking-wider text-electric-blue [text-shadow:_0px_0px_1.5px_rgb(152_249_255)] sm:text-2xl sm:[text-shadow:_0px_0px_3px_rgb(152_249_255)] md:text-3xl">
             June 22-23, 2024
           </p>
           <Logos className="mx-auto mt-8 block flex flex-row md:hidden" />
@@ -88,7 +101,7 @@ const Hero = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="focus:ring-none block w-full rounded-none border border-2 border-[#72DDE7] bg-transparent p-2.5 font-open-sans text-sm font-medium text-gray-900 text-white placeholder-gray-200 shadow-lg shadow-[#1072789e] drop-shadow-input focus:border-[#72DDE7] focus:ring-transparent"
+              className="focus:ring-none block w-full rounded-none border border-2 border-[#72DDE7] bg-background/50 bg-transparent p-2.5 font-open-sans text-sm font-medium text-gray-900 text-white placeholder-gray-200 shadow-lg shadow-[#1072789e] drop-shadow-input focus:border-[#72DDE7] focus:ring-transparent"
               placeholder="john@gmail.com"
               required
             />
