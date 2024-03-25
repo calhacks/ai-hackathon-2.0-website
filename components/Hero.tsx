@@ -101,7 +101,7 @@ const Hero = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="focus:ring-none block w-full rounded-none border border-2 border-[#72DDE7] bg-background/50 bg-transparent p-2.5 font-open-sans text-sm font-medium text-gray-900 text-white placeholder-gray-200 shadow-lg shadow-[#1072789e] drop-shadow-input focus:border-[#72DDE7] focus:ring-transparent"
+              className="focus:ring-none block w-full rounded-none border border-2 border-[#72DDE7] bg-background/50 bg-background/50 p-2.5 font-open-sans text-sm font-medium text-gray-900 text-white placeholder-gray-200 shadow-lg shadow-[#1072789e] drop-shadow-input focus:border-[#72DDE7] focus:ring-transparent"
               placeholder="john@gmail.com"
               required
             />
