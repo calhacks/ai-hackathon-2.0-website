@@ -29,7 +29,7 @@ const Logos: FC<LogosProps> = ({ className }) => {
       >
         <Image
           src="/images/berkeley-skydeck-logo.png"
-          alt="Hackathons @ Berkeley Logo"
+          alt="Berkeley Skydeck Logo"
           fill={true}
         />
       </a>
