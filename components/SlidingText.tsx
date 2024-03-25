@@ -11,7 +11,7 @@ const SlidingText = () => {
       <div className="z-2 relative w-screen">
         <Marquee
           loop={0}
-          speed={100}
+          speed={125}
           direction="left"
           className="m-0 h-full p-0 md:mt-36"
         >
@@ -19,7 +19,7 @@ const SlidingText = () => {
         </Marquee>
         <Marquee
           loop={0}
-          speed={100}
+          speed={125}
           direction="right"
           className="mt-12 h-full p-0"
         >

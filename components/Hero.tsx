@@ -44,7 +44,7 @@ const Hero = () => {
       <div className="absolute right-[120px] top-[80px] hidden text-6xl text-white md:block">
         <Logos />
       </div>
-      <div className="md:items-between relative z-10 mx-auto flex min-h-[100vh] max-w-screen-xl flex-col items-center px-8 pb-12 pt-36 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-20 md:py-40">
+      <div className="md:items-between relative z-10 mx-auto flex min-h-[105vh] max-w-screen-xl flex-col items-center px-8 pb-12 pt-36 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-20 md:py-40">
         <div className="relative flex flex-col items-center text-center md:items-start md:text-left">
           <div className="max-w-md">
             <h1 className="flex flex-col font-pp-neue-bit text-5xl font-bold text-white sm:text-7xl md:text-8xl">
@@ -68,9 +68,9 @@ const Hero = () => {
               </div>
               <motion.span
                 className="absolute -top-12 left-0 md:-left-8"
-                initial={{ opacity: 0, scale: 0.3, transform: "rotate(45deg)" }}
+                initial={{ opacity: 0, scale: 0.3, transform: "rotate(90deg)" }}
                 animate={{ opacity: 1, scale: 1, transform: "rotate(0deg)" }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.7 }}
               >
                 <Image
                   className="pointer-events-none animate-wiggle"
@@ -82,7 +82,7 @@ const Hero = () => {
               </motion.span>
             </h1>
           </div>
-          <p className="inline-block w-full font-whyte-inktrap text-xl font-normal tracking-wider text-electric-blue [text-shadow:_0px_0px_1.5px_rgb(152_249_255)] sm:text-2xl sm:[text-shadow:_0px_0px_3px_rgb(152_249_255)] md:text-3xl">
+          <p className="inline-block w-full font-whyte-inktrap text-lg font-normal tracking-wider text-electric-blue [text-shadow:_0px_0px_1.5px_rgb(152_249_255)] sm:[text-shadow:_0px_0px_3px_rgb(152_249_255)] md:text-2xl">
             June 22-23, 2024
           </p>
           <Logos className="mx-auto mt-8 block flex flex-row md:hidden" />
@@ -139,7 +139,7 @@ const Hero = () => {
       <div className="-mt-52 flex flex-col sm:-mt-64 md:hidden">
         <SlidingText />
       </div>
-      <div className="z-1 margin-auto fixed bottom-[-30vh] left-1/2 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>
+      <div className="z-1 margin-auto fixed bottom-[-50vh] left-1/2 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>
     </div>
   );
 };
