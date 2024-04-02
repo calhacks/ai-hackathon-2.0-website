@@ -11,7 +11,7 @@ const SlidingText = () => {
       <div className="z-2 relative w-screen">
         <Marquee
           loop={0}
-          speed={125}
+          speed={200}
           direction="left"
           className="m-0 h-full p-0"
         >
@@ -19,10 +19,10 @@ const SlidingText = () => {
         </Marquee>
         <Marquee
           loop={0}
-          speed={125}
+          speed={200}
           direction="right"
           className="h-full p-0"
-          style={{ marginTop: '-4em' }}
+          style={{ marginTop: "-4em" }}
         >
           <Image src={BottomMarqueeText} alt="" />
         </Marquee>
