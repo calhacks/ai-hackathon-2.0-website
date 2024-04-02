@@ -89,7 +89,7 @@ const Hero = () => {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="mt-32 w-full w-full max-w-md font-whyte-inktrap text-white md:ml-auto md:mt-0"
+          className="mt-32 w-full w-full max-w-md font-whyte-inktrap text-white md:ml-auto md:mt-80"
         >
           <p className="text-center text-center text-lg text-white sm:whitespace-nowrap md:text-right md:text-right md:text-xl">
             Be the first to know when applications launch.

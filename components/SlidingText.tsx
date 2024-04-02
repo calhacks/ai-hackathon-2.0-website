@@ -13,7 +13,7 @@ const SlidingText = () => {
           loop={0}
           speed={125}
           direction="left"
-          className="m-0 h-full p-0 md:mt-36"
+          className="m-0 h-full p-0"
         >
           <Image src={TopMarqueeText} alt="" />
         </Marquee>
@@ -21,7 +21,8 @@ const SlidingText = () => {
           loop={0}
           speed={125}
           direction="right"
-          className="mt-12 h-full p-0"
+          className="h-full p-0"
+          style={{ marginTop: '-4em' }}
         >
           <Image src={BottomMarqueeText} alt="" />
         </Marquee>
