@@ -44,7 +44,7 @@ const Hero = () => {
       <div className="absolute right-[120px] top-[80px] hidden text-6xl text-white md:block">
         <Logos />
       </div>
-      <div className="md:items-between relative z-10 mx-auto flex min-h-[105vh] max-w-screen-xl flex-col items-center px-8 pb-12 pt-36 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-20 md:py-40">
+      <div className="md:items-between relative z-10 mx-auto flex min-h-[103vh] max-w-screen-xl flex-col items-center px-8 pb-12 pt-36 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-20 md:py-40">
         <div className="relative flex flex-col items-center text-center md:items-start md:text-left">
           <div className="max-w-md">
             <h1 className="flex flex-col font-pp-neue-bit text-5xl font-bold text-white sm:text-7xl md:text-8xl">
