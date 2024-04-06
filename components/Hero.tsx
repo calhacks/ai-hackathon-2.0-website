@@ -20,6 +20,7 @@ const Hero = () => {
     const API_BASE_URL = "https://api.calhacks.io";
     const response = await fetch(`${API_BASE_URL}/static/subscribe`, {
       method: "POST",
+      mode: "cors",
       headers: {
         "Content-Type": "application/json",
       },
