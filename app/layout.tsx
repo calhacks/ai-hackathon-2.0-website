@@ -10,6 +10,12 @@ const ppNeueBit = localFont({
   variable: "--font-pp-neue-bit",
 });
 
+const ppMondwest = localFont({
+  src: "./PPMondwest-Regular.otf",
+  display: "swap",
+  variable: "--font-pp-mondwest",
+});
+
 const whyteInktrap = localFont({
   src: "./WhyteInktrap-Regular.ttf",
   display: "swap",
@@ -74,7 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} ${whyteInktrap.variable} ${ppNeueBit.variable}`}
+        className={`${openSans.variable} ${whyteInktrap.variable} ${ppNeueBit.variable} ${ppMondwest.variable}`}
       >
         {children}
       </body>

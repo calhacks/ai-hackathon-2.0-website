@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <main className="z-2 relative min-h-screen overflow-hidden bg-background flex flex-col items-center">
         <img src="/images/four-point.png" className="mt-24" style={{ height: '100px' }} />
-        <h1 className="text-5xl mt-6 font-pp-neue-bit">
+        <h1 className="text-5xl mt-6 font-pp-mondwest">
           Contact Us
         </h1>
         <p className="max-w-2xl text-xl text-center text-balance mt-4">
