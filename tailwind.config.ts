@@ -20,6 +20,7 @@ const config: Config = {
         inter: ["var(--font-inter)", "sans-serif"],
         "whyte-inktrap": ["var(--font-whyte-inktrap)", "sans-serif"],
         "pp-neue-bit": ["var(--font-pp-neue-bit)", "sans-serif"],
+        "pp-mondwest": ["var(--font-pp-mondwest)", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial":
