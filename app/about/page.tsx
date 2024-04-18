@@ -6,7 +6,7 @@ const cardBackground = { backgroundImage: 'linear-gradient(90deg, rgba(76, 4, 11
 export default function Home() {
   return (
     <>
-      <main className="z-2 relative min-h-screen overflow-hidden bg-background flex flex-col items-center ">
+      <main className="z-1 relative min-h-screen overflow-hidden flex flex-col items-center text-white" style={{ zIndex: 999 }}>
         <img src="/images/four-point.png" className="mt-24" style={{ height: '50px' }} />
         <h1 className="text-5xl mt-6 font-pp-mondwest">
           About
@@ -75,7 +75,9 @@ export default function Home() {
             </p>
           </div>
         </div>
+        
       </main>
+      <div className="z-0 margin-auto fixed bottom-[-50vh] left-1/2 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>
     </>
   );
 }
