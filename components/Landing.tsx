@@ -8,10 +8,17 @@ import Logos from "./Logos";
 const Landing = () => {
   return (
     <div className="relative w-full overflow-hidden bg-black">
-      <div className="relative z-10 mx-auto flex min-h-[100vh] max-w-screen-xl flex-col items-center px-8 pb-12 pt-36 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-20 md:py-40">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-screen-xl flex-col items-center px-8 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-20 md:py-40">
         <div className="relative flex flex-col items-center text-center md:items-start md:text-left">
           <div className="max-w-md">
-            <h1 className="flex flex-col font-pp-mondwest text-3xl font-bold text-white md:text-7xl">
+            <h1 className="flex flex-col font-pp-mondwest text-3xl text-white md:text-7xl">
+              <Image
+                src="/images/four-point.png"
+                alt="Four Point"
+                width={75}
+                height={75}
+                className="-mt-1 ml-[-60px]"
+              />
               <span>UC Berkeley</span>
               <div className="relative h-[40px] sm:h-[50px] md:h-[70px]">
                 <Image
@@ -22,7 +29,7 @@ const Landing = () => {
                 />
               </div>
             </h1>
-            <p className="mb-6 text-xl text-white">
+            <p className="mb-6 inline-block bg-gradient-to-r from-[#82F8FF] to-[#2F82FF] bg-clip-text text-xl text-transparent">
               June 22-23, 2024 @ UC Berkeley
             </p>
             <p className="mb-6 text-white">
