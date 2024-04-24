@@ -78,6 +78,11 @@ export default function Home() {
         
       </main>
       <div className="z-0 margin-auto fixed bottom-[-50vh] left-1/2 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>
+      <style>
+        {`html {
+          background: #000
+        }`}
+        </style>
     </>
   );
 }
