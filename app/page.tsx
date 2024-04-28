@@ -9,13 +9,15 @@ import Revolution from "@/components/Revolution";
 export default function Home() {
   return (
     <main >
-        <Nav />
-        <Landing />
-        <Revolution />
+      <Nav />
+      <Landing />
+      <Revolution />
+      <div className='bg-black' > {/* remove this div after adding gradient background */}
         <PhotoGrid />
         <FAQ />
-        <SponsorsPartners />
-        <DontMissOut />
+      </div>
+      <SponsorsPartners />
+      <DontMissOut />
     </main>
   );
 }

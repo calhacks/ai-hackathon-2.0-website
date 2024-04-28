@@ -111,29 +111,33 @@ const FAQ = () => {
   };
 
   return (
-    <div className="md:items-between relative z-10 mx-auto px-8 pb-12 pt-36 sm:px-16 md:px-20 md:py-40">
-    <Container id="card" disableGutters>
-      <Paper elevation={0} style={{ padding: 20, marginTop: 20, backgroundColor: "transparent" }}>
-        <Grid container spacing={2}>
-          <Grid item xs={6}>
-            <Typography style={{
-              fontFamily: 'var(--font-pp-neue-bit), sans-serif', color: 'white', fontSize: '50px', marginBottom: '-30px',
-            }}>{"Frequently Asked Questions"}</Typography>
-            <h1 className="flex flex-col font-pp-neue-bit text-electric-blue text-[40px] mt-0">
-              - we’ve got the answers.
-            </h1>
+    <div className="md:items-between relative z-10 mx-auto px-8 pb-12 pt-24 sm:px-16 md:px-20 md:py-40">
+      <Container id="card" disableGutters>
+        <Paper elevation={0} style={{ padding: 20, marginTop: 20, backgroundColor: "transparent" }}>
+          <Grid container spacing={2}>
+            {/* This Grid item will take full width on small screens and half width on medium and larger screens */}
+            <Grid item xs={12} md={6}>
 
+              <h1 className="font-pp-mondwest text-4xl text-white mb-0">
+                Frequently Asked Questions
+              </h1>
+              <h1 className="font-pp-mondwest text-4xl text-electric-blue mb-10">
+                - we’ve got the answers.
+              </h1>
+
+            </Grid>
+            {/* This Grid item will also take full width on small screens and half width on medium and larger screens */}
+            <Grid item xs={12} md={6}>
+              <Container disableGutters component="section" id="faq-accordion">
+                {generateAccordions()}
+              </Container>
+            </Grid>
           </Grid>
-          <Grid item xs={6}>
-            <Container style={{ marginTop: 20, }} disableGutters component="section" id="faq-accordion">
-              {generateAccordions()}
-            </Container>
-          </Grid>
-        </Grid>
-      </Paper>
-    </Container>
+        </Paper>
+      </Container>
     </div>
   );
+
 };
 
 export default FAQ;
