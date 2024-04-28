@@ -8,14 +8,14 @@ import Revolution from "@/components/Revolution";
 
 export default function Home() {
   return (
-    <main>
-      <Nav />
-      <Landing />
-      <Revolution />
-      <PhotoGrid />
-      <FAQ />
-      <SponsorsPartners />
-      <DontMissOut />
+    <main >
+        <Nav />
+        <Landing />
+        <Revolution />
+        <PhotoGrid />
+        <FAQ />
+        <SponsorsPartners />
+        <DontMissOut />
     </main>
   );
 }
