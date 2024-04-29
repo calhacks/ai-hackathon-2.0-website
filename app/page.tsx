@@ -8,14 +8,12 @@ import Revolution from "@/components/Revolution";
 
 export default function Home() {
   return (
-    <main >
+    <main className="bg-[url('../public/images/landing-bg.svg')] bg-cover">
       <Nav />
       <Landing />
       <Revolution />
-      <div className='bg-black' > {/* remove this div after adding gradient background */}
-        <PhotoGrid />
-        <FAQ />
-      </div>
+      <PhotoGrid />
+      <FAQ />
       <SponsorsPartners />
       <DontMissOut />
     </main>

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <nav className="w-full bg-black">
+    <nav className="w-full">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="flex justify-between">
           <div className="flex space-x-4">

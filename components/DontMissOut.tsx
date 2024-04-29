@@ -1,10 +1,8 @@
 "use client";
 
-import Image from "next/image";
-
 export default function DontMissOut() {
   return (
-    <div className="bg-black px-10 py-28 md:px-0">
+    <div className=" px-10 py-28 md:px-0">
       <p className="mb-6 text-center font-pp-mondwest text-3xl text-white sm:text-4xl xl:text-5xl">
         Don&apos;t Miss Out.
       </p>

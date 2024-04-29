@@ -67,7 +67,7 @@ const sponsorList = [
 
 export default function SponsorsPartners() {
   return (
-    <div className="flex w-screen bg-slate-800 px-4 pb-16 pt-4 md:px-0 lg:h-screen lg:pb-0">
+    <div className="flex w-screen px-4 pb-16 pt-4 md:px-0 lg:h-screen lg:pb-0">
       <div className="m-auto">
         <p className="mb-2 text-center font-pp-mondwest text-3xl text-white sm:text-4xl xl:text-5xl">
           Sponsors & Partners

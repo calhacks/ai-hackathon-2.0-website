@@ -7,7 +7,7 @@ import Logos from "./Logos";
 
 const Landing = () => {
   return (
-    <div className="relative w-full overflow-hidden bg-black">
+    <div className="relative w-full overflow-hidden">
       <div className="relative z-10 mx-auto flex min-h-screen max-w-screen-xl flex-col items-center px-8 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-20 md:py-40">
         <div className="relative flex flex-col items-center text-center md:items-start md:text-left">
           <div className="max-w-md">

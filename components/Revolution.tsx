@@ -1,13 +1,11 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import Logos from "./Logos";
 
 const Revolution = () => {
   return (
-    <div className="relative flex min-h-screen min-w-full flex-col items-center overflow-hidden bg-slate-800">
+    <div className="relative flex min-h-screen min-w-full flex-col items-center overflow-hidden">
       <Image
         src="/images/four-point.png"
         className="mt-24"
