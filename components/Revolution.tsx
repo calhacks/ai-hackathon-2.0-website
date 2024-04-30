@@ -16,7 +16,7 @@ const Revolution = () => {
       <h1 className="mt-6 font-pp-mondwest text-4xl text-white">
         Be Part of the Revolution.
       </h1>
-      <p className="mt-2 max-w-2xl text-center text-lg font-extralight text-white">
+      <p className="mt-2 max-w-[70vw] text-center text-lg font-extralight text-white">
         Explore the potential of large language models and other open source
         API’s, <br />
         all while <b>making a lasting impact</b> in the world of artificial
