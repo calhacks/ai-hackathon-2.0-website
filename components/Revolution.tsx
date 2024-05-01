@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const Revolution = () => {
   return (
-    <div className="relative flex min-h-screen min-w-full flex-col items-center overflow-hidden">
+    <div className="relative flex min-h-[70vh] min-w-full flex-col items-center overflow-hidden bg-black bg-opacity-70 pb-20">
       <Image
-        src="/images/four-point.png"
+        src="/images/four-point.svg"
         className="mt-24"
         height={75}
         width={75}
@@ -22,14 +22,8 @@ const Revolution = () => {
         all while <b>making a lasting impact</b> in the world of artificial
         intelligence.
       </p>
-      <div className="my-10 grid max-w-[78vw] grid-cols-1 gap-x-4 gap-y-7 md:grid-cols-2 lg:grid-cols-3">
-        <div
-          className="rounded-lg p-6"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(76, 4, 110, 0.383), rgba(27, 6, 152, 0.29))",
-          }}
-        >
+      <div className="my-10 grid max-w-[78vw] grid-cols-1 gap-x-5 gap-y-7 md:grid-cols-2 lg:grid-cols-3">
+        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
           <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
             GPT-4 and Plugins Access
           </h3>
@@ -39,13 +33,7 @@ const Revolution = () => {
             planet.
           </p>
         </div>
-        <div
-          className="rounded-lg p-6"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(76, 4, 110, 0.383), rgba(27, 6, 152, 0.29))",
-          }}
-        >
+        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
           <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
             Four Teams. $50,000 Each.
           </h3>
@@ -55,13 +43,7 @@ const Revolution = () => {
             work full time on their project for the rest of the summer.
           </p>
         </div>
-        <div
-          className="rounded-lg p-6"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(76, 4, 110, 0.383), rgba(27, 6, 152, 0.29))",
-          }}
-        >
+        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
           <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
             Exclusive Recruiting Opportunities
           </h3>
@@ -71,13 +53,7 @@ const Revolution = () => {
             the door.
           </p>
         </div>
-        <div
-          className="rounded-lg p-6"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(76, 4, 110, 0.383), rgba(27, 6, 152, 0.29))",
-          }}
-        >
+        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
           <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
             Learn From the Best
           </h3>
@@ -87,13 +63,7 @@ const Revolution = () => {
             the next level.
           </p>
         </div>
-        <div
-          className="rounded-lg p-6"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(76, 4, 110, 0.383), rgba(27, 6, 152, 0.29))",
-          }}
-        >
+        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
           <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
             Free Food, Free Swag, Free Credits
           </h3>
@@ -103,18 +73,12 @@ const Revolution = () => {
             credits for everyone!
           </p>
         </div>
-        <div
-          className="rounded-lg p-6"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(76, 4, 110, 0.383), rgba(27, 6, 152, 0.29))",
-          }}
-        >
+        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
           <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
             $250,000+ in Prizes
           </h3>
           <p className="leading-snug text-white">
-            Win cash, iPads, $4,000 in OpenAi platform credits, and so much
+            Win cash, iPads, $4,000 in OpenAI platform credits, and so much
             more.
           </p>
         </div>

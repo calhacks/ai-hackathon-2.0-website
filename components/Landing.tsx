@@ -13,14 +13,14 @@ const Landing = () => {
           <div className="max-w-md">
             <h1 className="flex flex-col font-pp-mondwest text-3xl text-white md:text-7xl">
               <Image
-                src="/images/four-point.png"
+                src="/images/four-point.svg"
                 alt="Four Point"
                 width={75}
                 height={75}
                 className="-mt-1 ml-[-60px]"
               />
               <span>UC Berkeley</span>
-              <div className="relative h-[40px] sm:h-[50px] md:h-[70px]">
+              <div className="relative h-[40px] sm:h-[50px] md:h-[80px]">
                 <Image
                   src="/images/ai-hackathon-text.svg"
                   alt="AI Hackathon"
@@ -29,7 +29,7 @@ const Landing = () => {
                 />
               </div>
             </h1>
-            <p className="mb-6 inline-block bg-gradient-to-r from-[#82F8FF] to-[#2F82FF] bg-clip-text text-xl text-transparent">
+            <p className="mb-6 inline-block bg-gradient-to-r from-[#82F8FF] to-[#2F82FF] bg-clip-text text-2xl text-transparent">
               June 22-23, 2024 @ UC Berkeley
             </p>
             <p className="mb-6 text-white">
@@ -45,18 +45,18 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="absolute right-[400px] top-[350px] hidden rotate-12 md:block">
+      <div className="absolute right-[375px] top-[325px] hidden rotate-12 md:block">
         <Image
-          src="/images/rounded-star.png"
+          src="/images/rounded-star.svg"
           alt="Star-2"
           className="z-1"
-          width={200}
-          height={200}
+          width={250}
+          height={250}
         />
       </div>
       <div className="absolute right-[50px] top-[-30px] hidden md:block">
         <Image
-          src="/images/eight-point.png"
+          src="/images/eight-point.svg"
           alt="Star-1"
           className="z-10"
           width={630}
