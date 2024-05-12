@@ -38,7 +38,7 @@ const Landing = () => {
               collaborate, and revolutionize the AI landscape.
             </p>
             <Link href="/">
-              <button className="border border-transparent bg-white px-4 py-2 font-semibold text-black transition ease-in-out hover:border-black">
+              <button className="border border-transparent bg-white px-4 py-2 font-semibold text-black transition ease-in-out hover:-translate-y-1">
                 Register
               </button>
             </Link>
