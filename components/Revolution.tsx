@@ -13,10 +13,10 @@ const Revolution = () => {
         width={75}
         alt="Four Point"
       />
-      <h1 className="mt-6 font-pp-mondwest text-4xl text-white">
+      <h1 className="mt-6 font-pp-mondwest text-3xl text-white md:text-4xl">
         Be Part of the Revolution.
       </h1>
-      <p className="mt-2 w-[70vw] max-w-[600px] text-center text-lg font-extralight text-white">
+      <p className="text-md mt-2 w-[70vw] max-w-[600px] text-center font-extralight text-white md:text-lg">
         Explore the potential of large language models and other open source
         API’s, all while <b>making a lasting impact</b> in the world of
         artificial intelligence.
