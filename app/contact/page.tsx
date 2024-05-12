@@ -11,10 +11,7 @@ export default function Home() {
   return (
     <main className="bg-[url('../public/images/contact-bg.svg')] bg-cover">
       <Nav />
-      <main
-        className="z-1 relative flex min-h-screen flex-col items-center overflow-hidden text-white"
-        style={{ zIndex: 999 }}
-      >
+      <main className="relative z-10 flex min-h-screen flex-col items-center overflow-hidden text-white">
         <img
           src="/images/four-point.png"
           className="mt-24"

@@ -16,11 +16,10 @@ const Revolution = () => {
       <h1 className="mt-6 font-pp-mondwest text-4xl text-white">
         Be Part of the Revolution.
       </h1>
-      <p className="mt-2 max-w-[70vw] text-center text-lg font-extralight text-white">
+      <p className="mt-2 w-[70vw] max-w-[600px] text-center text-lg font-extralight text-white">
         Explore the potential of large language models and other open source
-        API’s, <br />
-        all while <b>making a lasting impact</b> in the world of artificial
-        intelligence.
+        API’s, all while <b>making a lasting impact</b> in the world of
+        artificial intelligence.
       </p>
       <div className="my-10 grid max-w-[78vw] grid-cols-1 gap-x-5 gap-y-7 md:grid-cols-2 lg:grid-cols-3">
         <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">

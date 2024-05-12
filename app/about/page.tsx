@@ -2,19 +2,11 @@ import Hero from "@/components/Hero";
 import SlidingText from "@/components/SlidingText";
 import Nav from "@/components/Nav";
 
-const cardBackground = {
-  backgroundImage:
-    "linear-gradient(90deg, rgba(76, 4, 110, 0.2508) 0.25%, rgba(27, 6, 152, 0.1914) 93.27%)",
-};
-
 export default function Home() {
   return (
     <main className="bg-[url('../public/images/about-bg.svg')] bg-cover">
       <Nav />
-      <main
-        className="z-1 relative flex min-h-screen flex-col items-center overflow-hidden text-white"
-        style={{ zIndex: 999 }}
-      >
+      <main className="relative z-10 flex min-h-screen flex-col items-center overflow-hidden text-white">
         <img
           src="/images/four-point.png"
           className="mt-24"
@@ -26,7 +18,7 @@ export default function Home() {
           to give you an unparalleled hacking experience.
         </p>
         <div className="w-95 mt-6 grid max-w-5xl gap-6 px-8 md:w-full md:grid-cols-3">
-          <div style={cardBackground} className="rounded-lg p-6">
+          <div className="rounded-lg bg-black/30 p-6">
             <img
               src="/images/berkeley.png"
               style={{ height: "150px" }}
@@ -40,7 +32,7 @@ export default function Home() {
               groundbreaking discoveries, knowledge, and innovation.
             </p>
           </div>
-          <div style={cardBackground} className="rounded-lg p-6">
+          <div className="rounded-lg bg-black/30 p-6">
             <img
               src="/images/hab.png"
               className="mx-auto p-8"
@@ -56,7 +48,7 @@ export default function Home() {
               possible.
             </p>
           </div>
-          <div style={cardBackground} className="rounded-lg p-6">
+          <div className="rounded-lg bg-black/30 p-6">
             <img
               src="/images/berkeley-skydeck-logo.png"
               className="mx-auto p-8"
