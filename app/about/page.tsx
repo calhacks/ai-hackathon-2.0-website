@@ -68,8 +68,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <h2 className="mt-24 font-pp-mondwest text-5xl">Key Advisors</h2>
-        <div className="w-95 mb-64 mt-8 grid max-w-5xl gap-6 md:w-full md:grid-cols-3">
+        {/* <h2 className="mt-24 font-pp-mondwest text-5xl">Key Advisors</h2> */}
+        {/* <div className="w-95 mb-64 mt-8 grid max-w-5xl gap-6 md:w-full md:grid-cols-3">
           <div>
             <img
               src="/images/oski.jpeg"
@@ -109,7 +109,7 @@ export default function Home() {
               Beary important person @ Cal Hacks.
             </p>
           </div>
-        </div>
+        </div> */}
       </main>
       <div className="margin-auto fixed bottom-[-50vh] left-1/2 z-0 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>
       <style>

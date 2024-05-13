@@ -29,10 +29,10 @@ const Landing = () => {
                 />
               </div>
             </h1>
-            <p className="mb-6 inline-block bg-gradient-to-r from-[#82F8FF] to-[#2F82FF] bg-clip-text text-2xl text-transparent">
+            <p className="mb-6 inline-block bg-gradient-to-r from-[#82F8FF] to-[#2F82FF] bg-clip-text text-xl text-transparent md:text-2xl">
               June 22-23, 2024 @ UC Berkeley
             </p>
-            <p className="mb-6 text-white">
+            <p className="text-md mb-6 text-white lg:text-lg">
               Kick off the summer with an unparalleled experience, where the
               brightest minds from around the world come together to innovate,
               collaborate, and revolutionize the AI landscape.
