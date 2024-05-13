@@ -25,7 +25,7 @@ const Landing = () => {
                   src="/images/ai-hackathon-text.svg"
                   alt="AI Hackathon"
                   fill={true}
-                  className="pointer-events-none -ml-3 -mt-1 block md:-mt-2"
+                  className="pointer-events-none -ml-2 -mt-1 block md:-mt-2"
                 />
               </div>
             </h1>
@@ -37,15 +37,19 @@ const Landing = () => {
               brightest minds from around the world come together to innovate,
               collaborate, and revolutionize the AI landscape.
             </p>
-            <Link href="/">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://apply.hackberkeley.org"
+            >
               <button className="border border-transparent bg-white px-4 py-2 font-semibold text-black transition ease-in-out hover:-translate-y-1">
                 Register
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
-      <div className="absolute right-[375px] top-[325px] hidden rotate-12 md:block">
+      <div className="right-[375px] top-[325px] hidden rotate-12 lg:absolute lg:block">
         <Image
           src="/images/rounded-star.svg"
           alt="Star-2"
@@ -54,7 +58,7 @@ const Landing = () => {
           height={250}
         />
       </div>
-      <div className="absolute right-[50px] top-[-30px] hidden md:block">
+      <div className="visible right-[50px] top-[-30px] hidden lg:absolute lg:block">
         <Image
           src="/images/eight-point.svg"
           alt="Star-1"
