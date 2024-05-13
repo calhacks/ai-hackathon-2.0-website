@@ -46,6 +46,10 @@ const Landing = () => {
                 Register
               </button>
             </a>
+            <p className="mt-2 max-w-[350px] text-sm text-white">
+              priority apps due <b>June 1st, 11:59pm PST</b>; regular apps due{" "}
+              <b>June 10th, 11:59 pm PST</b>.
+            </p>
           </div>
         </div>
       </div>
