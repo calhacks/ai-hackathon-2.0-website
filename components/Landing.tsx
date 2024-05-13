@@ -8,10 +8,10 @@ import Logos from "./Logos";
 const Landing = () => {
   return (
     <div className="relative w-full overflow-hidden">
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-screen-xl flex-col items-center px-8 sm:px-16 md:place-content-between md:items-start md:justify-between md:px-20 md:py-40">
-        <div className="relative flex flex-col items-center text-center md:items-start md:text-left">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-screen-xl flex-col place-content-between items-start justify-between px-20 py-40">
+        <div className="relative flex flex-col items-start text-left">
           <div className="max-w-md">
-            <h1 className="flex flex-col font-pp-mondwest text-3xl text-white md:text-7xl">
+            <h1 className="flex flex-col font-pp-mondwest text-4xl text-white sm:text-6xl md:text-7xl">
               <Image
                 src="/images/four-point.svg"
                 alt="Four Point"
@@ -20,12 +20,12 @@ const Landing = () => {
                 className="-mt-1 ml-[-60px]"
               />
               <span>UC Berkeley</span>
-              <div className="relative h-[40px] sm:h-[50px] md:h-[80px]">
+              <div className="relative h-[70px] md:h-[80px]">
                 <Image
                   src="/images/ai-hackathon-text.svg"
                   alt="AI Hackathon"
                   fill={true}
-                  className="pointer-events-none -ml-3 -mt-2 hidden md:block"
+                  className="pointer-events-none -ml-3 -mt-1 block md:-mt-2"
                 />
               </div>
             </h1>
