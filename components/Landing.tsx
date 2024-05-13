@@ -53,6 +53,7 @@ const Landing = () => {
               priority apps due <b>June 1st, 11:59pm PST</b>; regular apps due{" "}
               <b>June 10th, 11:59 pm PST</b>.
             </p>
+            <Logos className="visible mt-12 lg:hidden" />
           </div>
         </div>
       </div>
@@ -74,7 +75,7 @@ const Landing = () => {
           height={630}
         />
       </div>
-      <div className="absolute right-[240px] top-[600px] hidden text-6xl text-white md:block">
+      <div className="absolute right-[240px] top-[600px] hidden text-6xl text-white lg:block">
         <Logos />
       </div>
     </div>
