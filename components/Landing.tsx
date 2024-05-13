@@ -19,7 +19,10 @@ const Landing = () => {
                 height={75}
                 className="-mt-1 ml-[-60px]"
               />
-              <span>UC Berkeley</span>
+              <span className="inline-block flex items-end">
+                UC Berkeley{" "}
+                <sub className="mb-2 text-[5px] md:text-[7px]">TM</sub>
+              </span>
               <div className="relative h-[70px] md:h-[80px]">
                 <Image
                   src="/images/ai-hackathon-text.svg"
