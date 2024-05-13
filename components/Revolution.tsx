@@ -3,6 +3,29 @@
 import React from "react";
 import Image from "next/image";
 
+const cards = [
+  {
+    heading: "Four Teams. $50,000 Each.",
+    description:
+      "Quit your internship. Teams selected by a panel of expert VCs have the opportunity to take $50,000 from the Berkeley SkyDeck fund and work full time on their project for the rest of the summer.",
+  },
+  {
+    heading: "Exclusive Recruiting Opportunities",
+    description:
+      "Meet and network with other AI/LLM developers, industry experts, and potential investors. Build lasting connections and get your foot in the door.",
+  },
+  {
+    heading: "Learn From the Best",
+    description:
+      "Attend workshops and hear from key components of the AI community. This is your chance to learn from the best and take your skills to the next level.",
+  },
+  {
+    heading: "Free Food, Free Swag, Free Credits",
+    description:
+      "We’ll take care of your meals and drinks. Meanwhile, stock up on free swag from our sponsors.",
+  },
+];
+
 const Revolution = () => {
   return (
     <div className="relative flex min-h-[70vh] min-w-full flex-col items-center overflow-hidden bg-black bg-opacity-70 pb-20">
@@ -22,45 +45,19 @@ const Revolution = () => {
         artificial intelligence.
       </p>
       <div className="my-10 grid max-w-[78vw] grid-cols-1 gap-x-5 gap-y-7 md:grid-cols-2 lg:grid-cols-2">
-        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-lg font-semibold text-[#77DAFF] md:text-xl">
-            Four Teams. $50,000 Each.
-          </h3>
-          <p className="leading-snug text-white">
-            Quit your internship. Teams selected by a panel of expert VCs have
-            the opportunity to take $50,000 from the Berkeley SkyDeck fund and
-            work full time on their project for the rest of the summer.
-          </p>
-        </div>
-        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-lg font-semibold text-[#77DAFF] md:text-xl">
-            Exclusive Recruiting Opportunities
-          </h3>
-          <p className="leading-snug text-white">
-            Meet and network with other AI/LLM developers, industry experts, and
-            potential investors. Build lasting connections and get your foot in
-            the door.
-          </p>
-        </div>
-        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-lg font-semibold text-[#77DAFF] md:text-xl">
-            Learn From the Best
-          </h3>
-          <p className="leading-snug text-white">
-            Attend workshops and hear from key components of the AI community.
-            This is your chance to learn from the best and take your skills to
-            the next level.
-          </p>
-        </div>
-        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-lg font-semibold text-[#77DAFF] md:text-xl">
-            Free Food, Free Swag, Free Credits
-          </h3>
-          <p className="leading-snug text-white">
-            We’ll take care of your meals and drinks. Meanwhile, stock up on
-            free swag from our sponsors.
-          </p>
-        </div>
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="min-h-[100px] rounded-lg bg-black/[.37] p-6"
+          >
+            <h3 className="mb-1 text-lg font-semibold text-[#77DAFF] md:text-xl">
+              {card.heading}
+            </h3>
+            <p className="text-md font-normal leading-snug text-white">
+              {card.description}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

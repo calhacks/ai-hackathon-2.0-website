@@ -9,18 +9,20 @@ export default function DontMissOut() {
       <p className="mb-1 text-center text-base text-white sm:text-xl xl:text-2xl">
         9am June 22 (Saturday) - 6pm June 23 (Sunday)
       </p>
-      <p className="mb-16 text-center text-base text-white sm:text-xl xl:text-2xl">
+      <p className="mb-8 text-center text-base text-white sm:text-xl xl:text-2xl">
         UC Berkeley, MLK Student Union Building
       </p>
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://apply.hackberkeley.org"
-      >
-        <button className="mx-auto block h-[38.4px] w-[110.4px] bg-white text-base text-opacity-0 hover:bg-[#e6e6e6] sm:h-[48px] sm:w-[138px] sm:text-xl xl:h-[60px] xl:w-[172.5px] xl:text-2xl">
-          Register
-        </button>
-      </a>
+      <div className="mx-auto text-center">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://apply.hackberkeley.org"
+        >
+          <button className="mx-auto h-[38.4px] w-[110.4px] bg-white text-base text-opacity-0 hover:bg-[#e6e6e6] sm:h-[48px] sm:w-[138px] sm:text-xl xl:h-[60px] xl:w-[172.5px] xl:text-2xl">
+            Register
+          </button>
+        </a>
+      </div>
     </div>
   );
 }
