@@ -26,9 +26,14 @@ const Nav = () => {
             >
               About
             </Link>
-            <Link href="/" className="px-3 py-5 text-white hover:underline">
-              Volunteer
-            </Link>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://forms.gle/x9AsZLftCKM1CAFE6"
+              className="px-3 py-5 text-white hover:underline"
+            >
+              Get Involved
+            </a>
             <Link
               href="/contact"
               className="px-3 py-5 text-white hover:underline"
@@ -72,9 +77,14 @@ const Nav = () => {
               >
                 About
               </Link>
-              <Link href="/" className="px-3 py-5 text-black hover:underline">
-                Volunteer
-              </Link>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://forms.gle/x9AsZLftCKM1CAFE6"
+                className="px-3 py-5 text-black hover:underline"
+              >
+                Get Involved
+              </a>
               <Link
                 href="/contact"
                 className="px-3 py-5 text-black hover:underline"
