@@ -21,19 +21,9 @@ const Revolution = () => {
         API’s, all while <b>making a lasting impact</b> in the world of
         artificial intelligence.
       </p>
-      <div className="my-10 grid max-w-[78vw] grid-cols-1 gap-x-5 gap-y-7 md:grid-cols-2 lg:grid-cols-3">
+      <div className="my-10 grid max-w-[78vw] grid-cols-1 gap-x-5 gap-y-7 md:grid-cols-2 lg:grid-cols-2">
         <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
-            GPT-4 and Plugins Access
-          </h3>
-          <p className="leading-snug text-white">
-            For 36 hours, you’ll have privileged access to the invite-only
-            OpenAI API, plugins, and some of the best LLM hacking tools on the
-            planet.
-          </p>
-        </div>
-        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
+          <h3 className="mb-1 text-lg font-semibold text-[#77DAFF] md:text-xl">
             Four Teams. $50,000 Each.
           </h3>
           <p className="leading-snug text-white">
@@ -43,7 +33,7 @@ const Revolution = () => {
           </p>
         </div>
         <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
+          <h3 className="mb-1 text-lg font-semibold text-[#77DAFF] md:text-xl">
             Exclusive Recruiting Opportunities
           </h3>
           <p className="leading-snug text-white">
@@ -53,7 +43,7 @@ const Revolution = () => {
           </p>
         </div>
         <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
+          <h3 className="mb-1 text-lg font-semibold text-[#77DAFF] md:text-xl">
             Learn From the Best
           </h3>
           <p className="leading-snug text-white">
@@ -63,22 +53,12 @@ const Revolution = () => {
           </p>
         </div>
         <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
+          <h3 className="mb-1 text-lg font-semibold text-[#77DAFF] md:text-xl">
             Free Food, Free Swag, Free Credits
           </h3>
           <p className="leading-snug text-white">
             We’ll take care of your meals and drinks. Meanwhile, stock up on
-            free swag from our sponsors, including Azure and OpenAI platform
-            credits for everyone!
-          </p>
-        </div>
-        <div className="min-h-[200px] rounded-lg bg-black/[.37] p-6">
-          <h3 className="mb-1 text-xl font-semibold text-[#77DAFF]">
-            $250,000+ in Prizes
-          </h3>
-          <p className="leading-snug text-white">
-            Win cash, iPads, $4,000 in OpenAI platform credits, and so much
-            more.
+            free swag from our sponsors.
           </p>
         </div>
       </div>

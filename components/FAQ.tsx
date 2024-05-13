@@ -5,7 +5,9 @@ import {
   AccordionDetails,
   AccordionSummary,
   Container,
-  Typography, Paper, Grid
+  Typography,
+  Paper,
+  Grid,
 } from "@mui/material";
 import React, { useState } from "react";
 
@@ -20,37 +22,37 @@ const FAQ = () => {
 
   const styles = {
     accordionRoot: {
-      backgroundColor: 'rgba(255, 255, 255, 0.1)',
-      color: 'white',
-      marginBottom: '20px',
-      padding: '10px',
-      borderRadius: '15px',
-      boxShadow: 'none',
+      backgroundColor: "rgba(255, 255, 255, 0.1)",
+      color: "white",
+      marginBottom: "20px",
+      padding: "10px",
+      borderRadius: "15px",
+      boxShadow: "none",
     },
     accordionSummaryRoot: {
-      padding: '0 1rem',
-      minHeight: '48px',
-      '&.MuiExpanded': {
-        minHeight: '48px',
+      padding: "0 1rem",
+      minHeight: "48px",
+      "&.MuiExpanded": {
+        minHeight: "48px",
       },
     },
     accordionDetailsRoot: {
-      padding: '0 1rem 1rem',
+      padding: "0 1rem 1rem",
     },
     expandIcon: {
-      color: 'white',
+      color: "white",
     },
     errorIcon: {
-      verticalAlign: 'middle',
-      color: 'red',
+      verticalAlign: "middle",
+      color: "red",
     },
     typographyQs: {
-      fontWeight: 'Bold',
-      fontFamily: 'var(--font-whyte-inktrap), sans-serif',
+      fontWeight: "Bold",
+      fontFamily: "var(--font-whyte-inktrap), sans-serif",
     },
     typographyAns: {
-      fontWeight: 'Normal',
-      fontFamily: 'var(--font-whyte-inktrap), sans-serif',
+      fontWeight: "Normal",
+      fontFamily: "var(--font-whyte-inktrap), sans-serif",
     },
   };
 
@@ -58,27 +60,36 @@ const FAQ = () => {
     {
       id: "faq-1",
       question: "What is the AI Hackathon?",
-      answer: "UC Berkeley’s AI Hackathon is a 2-day hackathon, where students will creatively collaborate on innovative technology, and attend workshops and panels to learn more about emerging tech!"
+      answer:
+        "UC Berkeley’s AI Hackathon is a 2-day hackathon, where students will creatively collaborate on innovative technology, and attend workshops and panels to learn more about emerging tech!",
     },
     {
       id: "faq-2",
       question: "How many people can be on a single team?",
-      answer: "Up to 4 people can be part of a single team."
+      answer: "Up to 4 people can be part of a single team.",
     },
     {
       id: "faq-3",
       question: "Do I have to have a team to participate?",
-      answer: "No. We will have team matching during the event itself, or you can come with a team or solo. Whatever works for you!"
+      answer:
+        "No. We will have team matching during the event itself, or you can come with a team or solo. Whatever works for you!",
     },
     {
       id: "faq-4",
       question: "What experience level is needed to attend?",
-      answer: "All experience levels are welcome!"
+      answer: "All experience levels are welcome!",
     },
     {
       id: "faq-5",
       question: "Do I have to be in-person?",
-      answer: "Yes, you and your team will all have to be in-person at UC Berkeley to participate in the hackathon."
+      answer:
+        "Yes, you and your team will all have to be in-person at UC Berkeley to participate in the hackathon.",
+    },
+    {
+      id: "faq-5",
+      question: "Do you offer any travel reimbursements?",
+      answer:
+        "We cannot offer travel reimbursements at this time. We apologize for the inconvenience!",
     },
   ];
 
@@ -113,18 +124,19 @@ const FAQ = () => {
   return (
     <div className="md:items-between relative z-10 mx-auto px-8 pb-12 pt-24 sm:px-16 md:px-20 md:py-40">
       <Container id="card" disableGutters>
-        <Paper elevation={0} style={{ padding: 20, marginTop: 20, backgroundColor: "transparent" }}>
+        <Paper
+          elevation={0}
+          style={{ padding: 20, marginTop: 20, backgroundColor: "transparent" }}
+        >
           <Grid container spacing={2}>
             {/* This Grid item will take full width on small screens and half width on medium and larger screens */}
             <Grid item xs={12} md={6}>
-
-              <h1 className="font-pp-mondwest text-4xl text-white mb-0">
+              <h1 className="mb-0 font-pp-mondwest text-4xl text-white">
                 Frequently Asked Questions
               </h1>
-              <h1 className="font-pp-mondwest text-4xl text-electric-blue mb-10">
+              <h1 className="mb-10 font-pp-mondwest text-4xl text-electric-blue">
                 - we’ve got the answers.
               </h1>
-
             </Grid>
             {/* This Grid item will also take full width on small screens and half width on medium and larger screens */}
             <Grid item xs={12} md={6}>
@@ -137,7 +149,6 @@ const FAQ = () => {
       </Container>
     </div>
   );
-
 };
 
 export default FAQ;
