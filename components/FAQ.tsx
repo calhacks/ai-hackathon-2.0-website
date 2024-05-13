@@ -86,7 +86,7 @@ const FAQ = () => {
         "Yes, you and your team will all have to be in-person at UC Berkeley to participate in the hackathon.",
     },
     {
-      id: "faq-5",
+      id: "faq-6",
       question: "Do you offer any travel reimbursements?",
       answer:
         "We cannot offer travel reimbursements at this time. We apologize for the inconvenience!",
