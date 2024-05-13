@@ -8,7 +8,7 @@ import Revolution from "@/components/Revolution";
 
 export default function Home() {
   return (
-    <main className="bg-[url('../public/images/landing-bg.svg')] bg-cover">
+    <main className="bg-black bg-[url('../public/images/landing-bg.svg')] bg-cover">
       <Nav />
       <Landing />
       <Revolution />
