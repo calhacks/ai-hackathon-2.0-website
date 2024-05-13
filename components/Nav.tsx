@@ -35,12 +35,14 @@ const Nav = () => {
             >
               Contact
             </Link>
-            <Link
-              href="/"
+            <a
+              href="https://apply.hackberkeley.org/login"
+              rel="noopener noreferrer"
+              target="_blank"
               className="border-1 border border-white px-3 py-0.5 text-white transition duration-300 hover:bg-white hover:text-black"
             >
               Register
-            </Link>
+            </a>
           </div>
 
           {/* Collapsible nav menu for mobile screens */}
