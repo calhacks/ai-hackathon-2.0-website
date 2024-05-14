@@ -17,7 +17,7 @@ const cards = [
   {
     heading: "Learn From the Best",
     description:
-      "Attend workshops and hear from key components of the AI community. This is your chance to learn from the best and take your skills to the next level.",
+      "Attend workshops and hear from the AI community. This is your chance to learn from the best and take your skills to the next level.",
   },
   {
     heading: "Free Food, Free Swag, Free Credits",

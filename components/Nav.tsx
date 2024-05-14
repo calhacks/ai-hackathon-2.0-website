@@ -15,7 +15,7 @@ const Nav = () => {
               href="/"
               className="flex items-center px-2 py-5 text-xl text-white"
             >
-              <span className="font-pp-mondwest">UCB AI Hackathon</span>
+              <span className="font-pp-mondwest">UC Berkeley AI Hackathon</span>
             </Link>
           </div>
           {/* Standard nav bar for non-mobile */}
@@ -46,7 +46,7 @@ const Nav = () => {
               target="_blank"
               className="border-1 border border-white px-3 py-0.5 text-white transition duration-300 hover:bg-white hover:text-black"
             >
-              Register
+              Apply
             </a>
           </div>
 
@@ -92,7 +92,7 @@ const Nav = () => {
                 Contact
               </Link>
               <Link href="/" className="px-3 py-5 text-black hover:underline">
-                Register
+                Apply
               </Link>
             </div>
           </div>
