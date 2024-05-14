@@ -52,8 +52,9 @@ const Landing = () => {
               </button>
             </a>
             <p className="mt-2 max-w-[300px] text-sm text-white">
-              priority apps due <b>June 1st, 11:59pm PST</b> regular apps due{" "}
-              <b>June 10th, 11:59 pm PST</b>
+              priority apps due <b>June 1st, 11:59pm PST</b>
+              <br />
+              regular apps due <b>June 10th, 11:59 pm PST</b>
             </p>
             <Logos className="visible mt-12 lg:hidden" />
           </div>

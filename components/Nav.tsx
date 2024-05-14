@@ -91,7 +91,12 @@ const Nav = () => {
               >
                 Contact
               </Link>
-              <Link href="/" className="px-3 py-5 text-black hover:underline">
+              <Link
+                href="https://apply.hackberkeley.org"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="px-3 py-5 text-black hover:underline"
+              >
                 Apply
               </Link>
             </div>
