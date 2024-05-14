@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Nav from "@/components/Nav";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,28 +19,32 @@ export default function Home() {
         </p>
         <div className="w-95 mt-6 grid max-w-5xl gap-6 px-8 md:w-full md:grid-cols-3">
           <div className="rounded-lg bg-black/30 p-6">
-            <img
-              src="/images/berkeley.png"
-              style={{ height: "150px" }}
-              className="mx-auto"
-            />
-            <h4 className="mt-4 text-lg font-bold text-electric-blue">
-              UC Berkeley
-            </h4>
+            <Link href="https://www.berkeley.edu/">
+              <img
+                src="/images/berkeley.png"
+                style={{ height: "150px" }}
+                className="mx-auto"
+              />
+              <h4 className="mt-4 text-lg font-bold text-electric-blue">
+                UC Berkeley
+              </h4>
+            </Link>
             <p className="mt-2">
               is the world’s #1 public university, with a rich history of
               groundbreaking discoveries.
             </p>
           </div>
           <div className="rounded-lg bg-black/30 p-6">
-            <img
-              src="/images/hab.png"
-              className="mx-auto p-8"
-              style={{ height: "150px" }}
-            />
-            <h4 className="mt-4 text-lg font-bold text-electric-blue">
-              Hackathons @ Berkeley
-            </h4>
+            <Link href="https://hackberkeley.org/">
+              <img
+                src="/images/hab.png"
+                className="mx-auto p-8"
+                style={{ height: "150px" }}
+              />
+              <h4 className="mt-4 text-lg font-bold text-electric-blue">
+                Hackathons @ Berkeley
+              </h4>
+            </Link>
             <p className="mt-2">
               is the non-profit, student-run organization that runs Cal Hacks,
               the world's largest collegiate hackathon. Hackathons @ Berkeley
@@ -48,18 +53,20 @@ export default function Home() {
             </p>
           </div>
           <div className="rounded-lg bg-black/30 p-6">
-            <img
-              src="/images/berkeley-skydeck-logo.png"
-              className="mx-auto p-8"
-              style={{
-                height: "150px",
-                objectFit: "contain",
-                objectPosition: "center",
-              }}
-            />
-            <h4 className="mt-4 text-lg font-bold text-electric-blue">
-              Berkeley SkyDeck
-            </h4>
+            <Link href="https://skydeck.berkeley.edu/">
+              <img
+                src="/images/berkeley-skydeck-logo.png"
+                className="mx-auto p-8"
+                style={{
+                  height: "150px",
+                  objectFit: "contain",
+                  objectPosition: "center",
+                }}
+              />
+              <h4 className="mt-4 text-lg font-bold text-electric-blue">
+                Berkeley SkyDeck
+              </h4>
+            </Link>
             <p className="mt-2">
               is UC Berkeley's premier startup accelerator with a mission to
               empower and cultivate the next generation of entrepreneurs.
