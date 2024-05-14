@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Hero from "@/components/Hero";
 import SlidingText from "@/components/SlidingText";
 import Nav from "@/components/Nav";
@@ -14,8 +15,8 @@ export default function Home() {
         />
         <h1 className="mt-6 font-pp-mondwest text-5xl">About</h1>
         <p className="mt-4 max-w-2xl text-balance text-center text-xl">
-          Cal Hacks, Berkeley SkyDeck, and UC Berkeley are joining forces again
-          to give you an unparalleled hacking experience.
+          Hackathons @ Berkeley, Berkeley SkyDeck, and UC Berkeley are joining
+          forces again to give you an unparalleled hacking experience.
         </p>
         <div className="w-95 mt-6 grid max-w-5xl gap-6 px-8 md:w-full md:grid-cols-3">
           <div className="rounded-lg bg-black/30 p-6">
@@ -29,7 +30,7 @@ export default function Home() {
             </h4>
             <p className="mt-2">
               is the world’s #1 public university, with a rich history of
-              groundbreaking discoveries, knowledge, and innovation.
+              groundbreaking discoveries.
             </p>
           </div>
           <div className="rounded-lg bg-black/30 p-6">
@@ -42,9 +43,9 @@ export default function Home() {
               Hackathons @ Berkeley
             </h4>
             <p className="mt-2">
-              is the non-profit organization that runs the largest collegiate
-              hackathon in the world. Every year, Hackathons @ Berkeley brings
-              together innovative minds to push the boundaries of what is
+              is the non-profit, student-run organization that runs Cal Hacks,
+              the world's largest collegiate hackathon. Hackathons @ Berkeley
+              brings together innovative minds to push the boundaries of what is
               possible.
             </p>
           </div>
@@ -62,9 +63,8 @@ export default function Home() {
               Berkeley SkyDeck
             </h4>
             <p className="mt-2">
-              is the premier startup accelerator affiliated with UC Berkeley,
-              with a mission to empower and cultivate the next generation of
-              entrepreneurs.
+              is UC Berkeley's premier startup accelerator with a mission to
+              empower and cultivate the next generation of entrepreneurs.
             </p>
           </div>
         </div>

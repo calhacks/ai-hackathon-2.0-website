@@ -19,7 +19,7 @@ export default function DontMissOut() {
           href="https://apply.hackberkeley.org"
         >
           <button className="mx-auto h-[38.4px] w-[110.4px] bg-white text-base text-opacity-0 hover:bg-[#e6e6e6] sm:h-[48px] sm:w-[138px] sm:text-xl xl:h-[60px] xl:w-[172.5px] xl:text-2xl">
-            Register
+            Apply
           </button>
         </a>
       </div>

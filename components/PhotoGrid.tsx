@@ -4,7 +4,7 @@ export default function PhotoGrid() {
   return (
     <div className="relative z-10 flex flex-col items-center px-8 pb-12 pt-24 min-h-screen min-w-full overflow-hidden">
       <h1 className="font-pp-mondwest text-4xl text-white -mb-5">
-        Join over 1000+ hackers in building
+        Join 1000+ hackers in building
       </h1>
       <h1 className="mt-6 font-pp-mondwest text-4xl text-electric-blue mb-10">
         the next generation of responsible AI.

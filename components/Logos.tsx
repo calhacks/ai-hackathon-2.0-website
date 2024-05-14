@@ -28,7 +28,7 @@ const Logos: FC<LogosProps> = ({ className }) => {
         className="relative z-50 m-0 h-[35px] w-[100px] p-0"
       >
         <Image
-          src="/images/skydeck.webp"
+          src="/images/berkeley-skydeck-white.png"
           alt="Berkeley Skydeck Logo"
           fill={true}
         />
