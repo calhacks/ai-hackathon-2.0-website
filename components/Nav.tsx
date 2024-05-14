@@ -7,7 +7,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full">
+    <nav className="z-20 w-full">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="flex justify-between">
           <div className="flex space-x-4">

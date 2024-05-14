@@ -1,13 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import Hero from "@/components/Hero";
-import SlidingText from "@/components/SlidingText";
 import Nav from "@/components/Nav";
 
 export default function Home() {
   return (
-    <main className="bg-[url('../public/images/about-bg.svg')] bg-cover">
+    <main className="bg-black bg-[url('../public/images/about-bg.svg')] bg-cover">
       <Nav />
-      <main className="relative z-10 flex min-h-screen flex-col items-center overflow-hidden text-white">
+      <main className="relative z-10 flex min-h-screen flex-col items-center overflow-auto text-white">
         <img
           src="/images/four-point.png"
           className="mt-24"
@@ -111,12 +109,12 @@ export default function Home() {
           </div>
         </div> */}
       </main>
-      <div className="margin-auto fixed bottom-[-50vh] left-1/2 z-0 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>
+      {/* <div className="margin-auto fixed bottom-[-50vh] left-1/2 z-0 h-[1144px] w-[1181px] w-full -translate-x-1/2 transform overflow-hidden rounded-full bg-gradient-radial blur-xl"></div>
       <style>
         {`html {
           background: #000
         }`}
-      </style>
+      </style> */}
     </main>
   );
 }
