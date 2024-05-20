@@ -61,7 +61,13 @@ const FAQ = () => {
       id: "faq-1",
       question: "What is the AI Hackathon?",
       answer:
-        "UC Berkeley’s AI Hackathon is a 2-day hackathon, where students will creatively collaborate on innovative technology, and attend workshops and panels to learn more about emerging tech!",
+        "The UC Berkeley AI Hackathon is a 2-day hackathon where students will collaborate on innovative technology, compete to win prizes including cash, and attend workshops and panels to learn more about emerging tech!",
+    },
+    {
+      id: "faq-7",
+      question: "Who is eligible to participate?",
+      answer:
+       "The AI Hackathon is open to undergraduate and graduate students as well as recent grads from all colleges and universities. We had 250+ universities represented in 2023."
     },
     {
       id: "faq-2",
