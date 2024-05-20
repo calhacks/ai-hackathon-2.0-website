@@ -18,22 +18,7 @@ export default function Home() {
           forces again to give you an unparalleled hacking experience.
         </p>
         <div className="w-95 mt-6 grid max-w-5xl gap-6 px-8 md:w-full md:grid-cols-3">
-          <div className="rounded-lg bg-black/30 p-6">
-            <Link href="https://www.berkeley.edu/">
-              <img
-                src="/images/berkeley.png"
-                style={{ height: "150px" }}
-                className="mx-auto"
-              />
-              <h4 className="mt-4 text-lg font-bold text-electric-blue">
-                UC Berkeley
-              </h4>
-            </Link>
-            <p className="mt-2">
-              is the world’s #1 public university, with a rich history of
-              groundbreaking discoveries.
-            </p>
-          </div>
+          
           <div className="rounded-lg bg-black/30 p-6">
             <Link href="https://hackberkeley.org/">
               <img
@@ -69,7 +54,26 @@ export default function Home() {
             </Link>
             <p className="mt-2">
               is UC Berkeley's premier startup accelerator with a mission to
-              empower and cultivate the next generation of entrepreneurs.
+              empower and cultivate the next generation of entrepreneurs. SkyDeck partners with the Berkeley SkyDeck Fund, 
+              which shares half the carried interest with Berkeley. Since its inception in 2018, the fund has built a portfolio of over 200 globally scaled companies, 
+              such as MindsDB and HaydenAI.
+
+            </p>
+          </div>
+          <div className="rounded-lg bg-black/30 p-6">
+            <Link href="https://www.berkeley.edu/">
+              <img
+                src="/images/berkeley.png"
+                style={{ height: "150px" }}
+                className="mx-auto"
+              />
+              <h4 className="mt-4 text-lg font-bold text-electric-blue">
+                UC Berkeley
+              </h4>
+            </Link>
+            <p className="mt-2">
+              is the world’s #1 public university, with a rich history of
+              groundbreaking discoveries.
             </p>
           </div>
         </div>
