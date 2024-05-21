@@ -24,14 +24,7 @@ const Landing = () => {
                 UC Berkeley{" "}
                 <sub className="mb-2 text-[5px] md:text-[7px]">TM</sub>
               </span>
-              <div className="relative h-[70px] md:h-[80px]">
-                <Image
-                  src="/images/ai-hackathon-text.svg"
-                  alt="AI Hackathon"
-                  fill={true}
-                  className="pointer-events-none -ml-2 -mt-1 block md:-mt-2"
-                />
-              </div>
+              <div className="relative">AI Hackathon</div>
             </h1>
 
             <p className="mb-6 inline-block bg-gradient-to-r from-[#82F8FF] to-[#2F82FF] bg-clip-text text-xl text-transparent md:text-2xl">
