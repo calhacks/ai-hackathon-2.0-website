@@ -30,8 +30,8 @@ export default function Home() {
               </h4>
             </Link>
             <p className="mt-2">
-              is the world’s #1 public university, with a rich history of
-              groundbreaking discoveries.
+              UC Berkeley is the world’s #1 public university, with a rich
+              history of groundbreaking discoveries.
             </p>
           </div>
           <div className="rounded-lg bg-black/30 p-6">
@@ -46,10 +46,10 @@ export default function Home() {
               </h4>
             </Link>
             <p className="mt-2">
-              is the non-profit, student-run organization that runs Cal Hacks,
-              the world's largest collegiate hackathon. Hackathons @ Berkeley
-              brings together innovative minds to push the boundaries of what is
-              possible.
+              Hackathons @ Berkeley is the non-profit, student-run organization
+              that runs Cal Hacks, the world's largest collegiate hackathon.
+              Hackathons @ Berkeley brings together innovative minds to push the
+              boundaries of what is possible.
             </p>
           </div>
           <div className="rounded-lg bg-black/30 p-6">
@@ -68,8 +68,10 @@ export default function Home() {
               </h4>
             </Link>
             <p className="mt-2">
-              is UC Berkeley's premier startup accelerator with a mission to
-              empower and cultivate the next generation of entrepreneurs.
+              SkyDeck partners with the Berkeley SkyDeck Fund, which shares half
+              the carried interest with Berkeley. Since its inception in 2018,
+              the fund has built a portfolio of over 200 globally scaled
+              companies, such as MindsDB and HaydenAI.
             </p>
           </div>
         </div>

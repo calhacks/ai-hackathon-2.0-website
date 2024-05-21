@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const cards = [
   {
-    heading: "Four Teams. $25,000 Each.",
+    heading: "$100K Prize Money",
     description:
-      "Quit your internship. Teams selected by a panel of expert VCs have the opportunity to take $25,000 from the Berkeley SkyDeck fund and work full time on their project for the rest of the summer.",
+      "Teams selected by a panel of expert VCs have the opportunity to take some of the $100K prize money from the Berkeley SkyDeck Fund and work full time on their project for the rest of the summer.",
   },
   {
     heading: "Exclusive Recruiting Opportunities",

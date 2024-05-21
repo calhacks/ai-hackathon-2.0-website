@@ -61,32 +61,38 @@ const FAQ = () => {
       id: "faq-1",
       question: "What is the AI Hackathon?",
       answer:
-        "UC Berkeley’s AI Hackathon is a 2-day hackathon, where students will creatively collaborate on innovative technology, and attend workshops and panels to learn more about emerging tech!",
+        "UC Berkeley’s AI Hackathon is a 2-day hackathon, where hackers creatively collaborate on innovative technology for a chance to win prizes including cash, and attend workshops and panels to learn more about emerging tech!",
     },
     {
       id: "faq-2",
+      question: "Who can participate in the AI Hackathon?",
+      answer:
+        "The AI Hackathon is open to undergraduate and graduate students as well as new grads from all colleges and universities. We had 250+ universities represented in 2023 and are partnering with the Hacker clubs at other colleges throughout the US.",
+    },
+    {
+      id: "faq-3",
       question: "How many people can be on a single team?",
       answer: "Up to 4 people can be part of a single team.",
     },
     {
-      id: "faq-3",
+      id: "faq-4",
       question: "Do I have to have a team to participate?",
       answer:
         "No. We will have team matching during the event itself, or you can come with a team or solo. Whatever works for you!",
     },
     {
-      id: "faq-4",
+      id: "faq-5",
       question: "What experience level is needed to attend?",
       answer: "All experience levels are welcome!",
     },
     {
-      id: "faq-5",
+      id: "faq-6",
       question: "Do I have to be in-person?",
       answer:
         "Yes, you and your team will all have to be in-person at UC Berkeley to participate in the hackathon.",
     },
     {
-      id: "faq-6",
+      id: "faq-7",
       question: "Do you offer any travel reimbursements?",
       answer:
         "We cannot offer travel reimbursements at this time. We apologize for the inconvenience!",

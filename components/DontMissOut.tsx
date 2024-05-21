@@ -7,7 +7,7 @@ export default function DontMissOut() {
         Don&apos;t Miss Out.
       </p>
       <p className="mb-1 text-center text-base text-white sm:text-xl xl:text-2xl">
-        9am June 22 (Saturday) - 6pm June 23 (Sunday)
+        Saturday, June 22 at 9am PT - Sunday, June 23 at 6pm PT
       </p>
       <p className="mb-8 text-center text-base text-white sm:text-xl xl:text-2xl">
         UC Berkeley, MLK Student Union Building
