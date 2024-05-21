@@ -4,64 +4,54 @@ import Image from "next/image";
 
 const sponsorList = [
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/hackdavis.png",
+    link: "https://hackdavis.io/",
+    alt: "Hack Davis partner",
   },
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/hackuci.jpeg",
+    link: "https://hackuci.com/",
+    alt: "Hack UCI partner",
   },
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/lahacks.jpeg",
+    link: "https://lahacks.com/",
+    alt: "LAHacks partner",
   },
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/mhacks.jpg",
+    link: "https://www.mhacks.org/",
+    alt: "MHacks partner",
   },
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/mitcenterforentrepreneurship.png",
+    link: "https://entrepreneurship.mit.edu/",
+    alt: "The Martin Trust Center for MIT Entrepreneurship partner",
   },
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/mithack.png",
+    link: "https://hackmit.org/",
+    alt: "Hack MIT partner",
   },
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/pinnacle.png",
+    link: "https://pinnacle.us.org/",
+    alt: "Pinnacle partner",
   },
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/sfsu.png",
+    link: "https://sfhacks.io/",
+    alt: "SF Hacks partner",
   },
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/treehacks.png",
+    link: "https://www.treehacks.com/",
+    alt: "TreeHacks partner",
   },
   {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
-  },
-  {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
-  },
-  {
-    image: "/images/adobe.svg",
-    link: "https://www.adobe.com/",
-    alt: "Adobe sponsor",
+    image: "/images/sponsors/vthacks.svg",
+    link: "https://vthacks.com/",
+    alt: "VTHacks partner",
   },
 ];
 
@@ -109,9 +99,14 @@ export default function SponsorsPartners() {
                 href={logo.link}
                 rel="noopener noreferrer"
                 target="_blank m-auto"
-                className="relative h-20 w-40 md:h-24 md:w-48 lg:h-20 lg:w-40 xl:h-28 xl:w-56"
+                className="relative flex h-full w-[10rem] items-center justify-center text-center"
               >
-                <Image fill src={logo.image} alt={logo.alt} />
+                <Image
+                  src={logo.image}
+                  width={100}
+                  height={100}
+                  alt={logo.alt}
+                />
               </a>
             );
           })}

@@ -14,7 +14,7 @@ export default function Home() {
       <Revolution />
       <PhotoGrid />
       <FAQ />
-      {/* <SponsorsPartners /> */}
+      <SponsorsPartners />
       <DontMissOut />
     </main>
   );
