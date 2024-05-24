@@ -32,7 +32,7 @@ const Nav = () => {
               href="https://forms.gle/x9AsZLftCKM1CAFE6"
               className="px-3 py-5 text-white hover:underline"
             >
-              Volunteer
+              Volunteer/Judge
             </a>
             <Link
               href="/contact"
@@ -83,7 +83,7 @@ const Nav = () => {
                 href="https://forms.gle/x9AsZLftCKM1CAFE6"
                 className="px-3 py-5 text-black hover:underline"
               >
-                Volunteer
+                Volunteer/Judge
               </a>
               <Link
                 href="/contact"
