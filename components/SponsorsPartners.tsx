@@ -53,6 +53,16 @@ const sponsorList = [
     link: "https://vthacks.com/",
     alt: "VTHacks partner",
   },
+  {
+    image: "/images/sponsors/pennapps.png",
+    link: "https://pennapps.com/",
+    alt: "PennApps partner",
+  },
+  {
+    image: "/images/sponsors/ucsd.jpeg",
+    link: "https://innovation.ucsd.edu/",
+    alt: "UCSD Office of Innovation and Commercialization partner",
+  },
 ];
 
 export default function SponsorsPartners() {

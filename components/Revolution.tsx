@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const cards = [
   {
-    heading: "$100K Prize Money",
+    heading: "$100K Investment",
     description:
-      "Teams selected by a panel of expert VCs have the opportunity to take some of the $100K prize money from the Berkeley SkyDeck Fund and work full time on their project for the rest of the summer.",
+      "Teams selected by a panel of expert VCs have the opportunity to take some of the $100K investment from the Berkeley SkyDeck Fund and work full time on their project for the rest of the summer.",
   },
   {
     heading: "Exclusive Recruiting Opportunities",
