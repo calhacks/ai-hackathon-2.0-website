@@ -101,6 +101,28 @@ export default function SponsorsPartners() {
             />
           </a>
         </div>
+        <div className="my-16 flex flex-row justify-center gap-4">
+          <a
+            href="https://hackberkeley.org"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 m-0 -mt-1.5 h-[80px] w-[160px] p-0 sm:h-[100px] sm:w-[200px] xl:h-[125px] xl:w-[250px]"
+          >
+            <Image src="/images/sponsors/intel.svg" alt="Intel Logo" fill />
+          </a>
+          <a
+            href="https://www.aicventures.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 m-0 -mt-2 h-[85px] w-[160px] p-0 sm:h-[100px] sm:w-[200px] xl:h-[120px] xl:w-[250px]"
+          >
+            <Image
+              src="/images/sponsors/aic.png"
+              alt="AIC Ventures Logo"
+              fill
+            />
+          </a>
+        </div>
         <div className="grid grid-cols-2 justify-items-center gap-10 lg:grid-cols-4">
           {sponsorList.map((logo, index) => {
             return (
