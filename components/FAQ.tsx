@@ -87,12 +87,18 @@ const FAQ = () => {
     },
     {
       id: "faq-6",
+      question: "Can I start on my project before the hackathon?",
+      answer:
+        "You cannot work on a project you started before the hackathon. Ideation before the hackathon is allowed, but all implementation must occur during the hackathon.",
+    },
+    {
+      id: "faq-7",
       question: "Do I have to be in-person?",
       answer:
         "Yes, you and your team will all have to be in-person at UC Berkeley to participate in the hackathon.",
     },
     {
-      id: "faq-7",
+      id: "faq-8",
       question: "Do you offer any travel reimbursements?",
       answer:
         "We cannot offer travel reimbursements at this time. We apologize for the inconvenience!",
