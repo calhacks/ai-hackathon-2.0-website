@@ -103,7 +103,7 @@ export default function SponsorsPartners() {
         </div>
         <div className="my-16 flex flex-row justify-center gap-4">
           <a
-            href="https://hackberkeley.org"
+            href="https://www.intel.com/"
             rel="noopener noreferrer"
             target="_blank"
             className="relative z-50 m-0 -mt-1.5 h-[80px] w-[160px] p-0 sm:h-[100px] sm:w-[200px] xl:h-[125px] xl:w-[250px]"
