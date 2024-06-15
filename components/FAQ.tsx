@@ -99,9 +99,10 @@ const FAQ = () => {
     },
     {
       id: "faq-8",
-      question: "Do you offer any travel reimbursements?",
+      question:
+        "Do you provide travel reimbursements or transportation for hackers?",
       answer:
-        "We cannot offer travel reimbursements at this time. We apologize for the inconvenience!",
+        "Unfortunately not—hackers are in charge of getting themselves to the venue. However, there’s reliable public transportation in the Bay, such as CalTrain, BART, and buses in Berkeley. The nearest airports are SFO and OAK, and there are various hotels around Berkeley including Residence Inn and Hotel Shattuck Plaza (Note: We are not sponsored by or partnering with these hotels).",
     },
   ];
 

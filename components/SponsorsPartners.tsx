@@ -75,7 +75,7 @@ export default function SponsorsPartners() {
         <p className="text-center text-base text-white sm:text-xl xl:text-2xl">
           A round of applause for our sponsors, who make all of this possible.
         </p>
-        <div className="my-16 flex flex-row justify-center gap-4">
+        <div className="mt-16 flex flex-row justify-center gap-4">
           <a
             href="https://hackberkeley.org"
             rel="noopener noreferrer"
@@ -129,7 +129,7 @@ export default function SponsorsPartners() {
             />
           </a>
         </div>
-        <div className="my-16 grid grid-cols-2 items-center justify-items-center gap-8 lg:grid-cols-3 lg:gap-10">
+        <div className="mt-16 grid grid-cols-2 items-center justify-items-center gap-8 lg:grid-cols-3 lg:gap-10">
           <a
             href="https://www.you.com/"
             rel="noopener noreferrer"
@@ -239,7 +239,7 @@ export default function SponsorsPartners() {
             href="https://groq.com/"
             rel="noopener noreferrer"
             target="_blank"
-            className="relative z-50 col-span-full m-0 -mt-1.5 h-[70px] w-full min-[1030px]:col-span-1 min-[1030px]:h-[100px]"
+            className="relative z-50 col-span-full m-0 mt-8 h-[70px] w-full sm:-mt-1.5 min-[1030px]:col-span-1 min-[1030px]:h-[100px]"
           >
             <Image
               src="/images/sponsors/groq.svg"
@@ -248,8 +248,36 @@ export default function SponsorsPartners() {
               objectFit="contain"
             />
           </a>
+          <div className="col-span-3 mt-8 flex h-[150px] w-full justify-center">
+            <a
+              href="https://www.lmnt.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="relative z-50 m-0 -mt-8 h-[150px] w-full sm:w-[40%]"
+            >
+              <Image
+                src="/images/sponsors/lmnt.svg"
+                alt="LMNT Logo"
+                fill
+                objectFit="contain"
+              />
+            </a>
+            <a
+              href="https://www.mindsdb.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="relative z-50 m-0 -mt-8 h-[150px] w-full sm:w-[40%]"
+            >
+              <Image
+                src="/images/sponsors/mindsdb.png"
+                alt="MindsDB Logo"
+                fill
+                objectFit="contain"
+              />
+            </a>
+          </div>
         </div>
-        <div className="grid grid-cols-2 justify-items-center gap-10 lg:grid-cols-4">
+        <div className="grid grid-cols-2 justify-items-center gap-8 md:grid-cols-3 lg:grid-cols-4">
           {partneringSchools.map((logo, index) => {
             return (
               <a
