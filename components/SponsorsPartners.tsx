@@ -239,7 +239,7 @@ export default function SponsorsPartners() {
             href="https://groq.com/"
             rel="noopener noreferrer"
             target="_blank"
-            className="relative z-50 col-span-full m-0 mt-8 h-[70px] w-full sm:-mt-1.5 min-[1030px]:col-span-1 min-[1030px]:h-[100px]"
+            className="relative z-50 col-span-full m-0 my-4 h-[70px] w-full sm:-mt-1.5 min-[1030px]:col-span-1 min-[1030px]:h-[100px]"
           >
             <Image
               src="/images/sponsors/groq.svg"
@@ -248,36 +248,47 @@ export default function SponsorsPartners() {
               objectFit="contain"
             />
           </a>
-          <div className="col-span-3 mt-8 flex h-[150px] w-full justify-center">
-            <a
-              href="https://www.lmnt.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="relative z-50 m-0 -mt-8 h-[150px] w-full sm:w-[40%]"
-            >
-              <Image
-                src="/images/sponsors/lmnt.svg"
-                alt="LMNT Logo"
-                fill
-                objectFit="contain"
-              />
-            </a>
-            <a
-              href="https://www.mindsdb.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="relative z-50 m-0 -mt-8 h-[150px] w-full sm:w-[40%]"
-            >
-              <Image
-                src="/images/sponsors/mindsdb.png"
-                alt="MindsDB Logo"
-                fill
-                objectFit="contain"
-              />
-            </a>
-          </div>
+          <a
+            href="https://www.lmnt.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 m-0 -mt-8 mb-4 h-[150px] w-full"
+          >
+            <Image
+              src="/images/sponsors/lmnt.svg"
+              alt="LMNT Logo"
+              fill
+              objectFit="contain"
+            />
+          </a>
+          <a
+            href="https://www.mindsdb.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 m-0 -mt-8 mb-4 h-[150px] w-full"
+          >
+            <Image
+              src="/images/sponsors/mindsdb.png"
+              alt="MindsDB Logo"
+              fill
+              objectFit="contain"
+            />
+          </a>
+          <a
+            href="https://www.singlestore.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 col-span-full m-0 -mt-8 mb-4 h-[150px] h-[70px] w-full min-[1030px]:col-span-1 min-[1030px]:h-[100px]"
+          >
+            <Image
+              src="/images/sponsors/singlestore.svg"
+              alt="SingleStore Logo"
+              fill
+              objectFit="contain"
+            />
+          </a>
         </div>
-        <div className="grid grid-cols-2 justify-items-center gap-8 md:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-[2.5rem] grid grid-cols-2 justify-items-center gap-8 md:grid-cols-3 lg:grid-cols-4">
           {partneringSchools.map((logo, index) => {
             return (
               <a
