@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/config";
+import Banner from "@/components/Banner";
 
 const ppNeueBit = localFont({
   src: "./PPNeueBit-Bold.otf",
@@ -82,6 +83,7 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} ${whyteInktrap.variable} ${ppNeueBit.variable} ${ppMondwest.variable}`}
       >
+        <Banner />
         {children}
       </body>
     </html>
