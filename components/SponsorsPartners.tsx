@@ -101,7 +101,7 @@ export default function SponsorsPartners() {
             />
           </a>
         </div>
-        <div className="my-16 flex flex-row justify-center gap-4">
+        {/* <div className="mb-8 mt-16 flex flex-row flex-wrap items-center justify-center gap-12 sm:my-16 md:gap-4">
           <a
             href="https://www.intel.com/"
             rel="noopener noreferrer"
@@ -128,8 +128,60 @@ export default function SponsorsPartners() {
               objectFit="contain"
             />
           </a>
-        </div>
-        <div className="mt-16 grid grid-cols-2 items-center justify-items-center gap-8 lg:grid-cols-3 lg:gap-10">
+          <a
+            href="https://mistral.ai/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 m-0 h-[56px] w-[160px] p-0 sm:h-[70px] sm:w-[200px] xl:h-[70px] xl:w-[250px]"
+          >
+            <Image
+              src="/images/sponsors/mistral.svg"
+              alt="Mistral Logo"
+              fill
+              objectFit="contain"
+            />
+          </a>
+        </div> */}
+        <div className="mt-12 grid grid-cols-2 items-center justify-items-center gap-8 lg:grid-cols-3 lg:gap-10">
+          <a
+            href="https://www.intel.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 m-0 -mt-1.5 h-[150px] w-full p-0"
+          >
+            <Image
+              src="/images/sponsors/intel.png"
+              alt="Intel Logo"
+              fill
+              objectFit="contain"
+            />
+          </a>
+          <a
+            href="https://www.openai.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 m-0 -mt-1.5 h-[150px] w-full p-0"
+          >
+            <Image
+              src="/images/sponsors/openai.svg"
+              alt="OpenAI Logo"
+              fill
+              objectFit="contain"
+            />
+          </a>
+          <a
+            href="https://mistral.ai/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 m-0 -mt-1.5 h-[150px] w-full p-0"
+          >
+            <Image
+              src="/images/sponsors/mistral.svg"
+              alt="Mistral Logo"
+              fill
+              objectFit="contain"
+            />
+          </a>
           <a
             href="https://www.you.com/"
             rel="noopener noreferrer"
@@ -169,7 +221,6 @@ export default function SponsorsPartners() {
               objectFit="contain"
             />
           </a>
-          {/*  */}
           <a
             href="https://www.reachcapital.com/"
             rel="noopener noreferrer"
@@ -239,7 +290,7 @@ export default function SponsorsPartners() {
             href="https://groq.com/"
             rel="noopener noreferrer"
             target="_blank"
-            className="relative z-50 col-span-full m-0 my-4 h-[70px] w-full sm:-mt-1.5 min-[1030px]:col-span-1 min-[1030px]:h-[100px]"
+            className="relative z-50 m-0 -mt-1.5 h-[50px] w-full min-[1030px]:col-span-1 min-[1030px]:h-[75px]"
           >
             <Image
               src="/images/sponsors/groq.svg"
