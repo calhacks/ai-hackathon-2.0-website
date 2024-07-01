@@ -338,6 +338,19 @@ export default function SponsorsPartners() {
               objectFit="contain"
             />
           </a>
+          <a
+            href="https://starrocket.io/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="relative z-50 col-span-full mb-4 mt-1 h-[90px] w-full md:-mt-8 min-[1030px]:h-[100px]"
+          >
+            <Image
+              src="/images/sponsors/star-rocket.png"
+              alt="Star Rocket Logo"
+              fill
+              objectFit="contain"
+            />
+          </a>
         </div>
         <div className="mt-[2.5rem] grid grid-cols-2 justify-items-center gap-8 md:grid-cols-3 lg:grid-cols-4">
           {partneringSchools.map((logo, index) => {
